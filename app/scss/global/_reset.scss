@@ -1,4 +1,16 @@
-html {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+}
+
+address {
+  font-style: normal;
+}html {
   box-sizing: border-box;
 }
 
@@ -66,4 +78,16 @@ button {
   border: none;
   padding: 0;
   outline: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+}
+
+address {
+  font-style: normal;
 }

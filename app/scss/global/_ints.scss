@@ -1,0 +1,58 @@
+.button {
+  padding: 16px 76px;
+  border-radius: 4px;
+  background-color: $accent;
+  color: $light;
+  font-size: 20px;
+  font-weight: 600;
+
+  &:focus {
+    outline: solid 1px $dark;
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+
+  &:hover {
+    background-color: $dark;
+  }
+
+  &:active {
+    background-color: $primary;
+  }
+}
+
+.button-light {
+  padding: 16px 76px;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid $primary;
+  color: dark;
+  transition: color 0.4s,
+    background-color 0.4s, outline 0.4s;
+
+  &:hover {
+    background-color: $accent;
+    color: $light;
+  }
+
+  &:active {
+    background-color: $dark;
+  }
+
+}
+
+.focus {
+  &:focus {
+    outline: solid 1px $dark;
+    outline-offset: 4px;
+    border-radius: 4px;
+
+    &--white {
+      outline: solid 1px $light;
+
+    }
+  }
+}
+
