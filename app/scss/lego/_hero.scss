@@ -1,0 +1,43 @@
+.hero {
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 47vh;
+    background-position: right;
+    height: calc(60vh + 106px);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/bg-hero.jpg);
+    width: 100%;
+    z-index: -5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+    &__content {
+      max-width: 730px;
+      width: 100%;
+      
+    }
+
+    &__title {
+      font-size: 96px;
+      margin-bottom: 20px;
+    }
+
+    &__txt {
+      margin-bottom: 80px;
+      padding-right: 100px;
+      font-size: 27px;
+    }
+  }
