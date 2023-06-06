@@ -12,6 +12,7 @@
 
   &__logo {
     margin-right: 50px;
+    height: fit-content;
 
     &:focus {
       outline: solid 1px $light;
