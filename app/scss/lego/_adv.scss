@@ -1,24 +1,57 @@
 .adv {
-  background: linear-gradient(140deg, #DBF0EC, #F1F6F5, #F3F7EF);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 
   &__inner {
     display: flex;
-    justify-content: space-between;
-  }
-  &__item {
-    text-align: center;
-    &:not(:last-child) {
-      margin-right: 44px;
-    }
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    padding: 38px 0;
+
   }
 
-  &__img {
-    margin-bottom: 24px;
+  &__content {
+    max-width: 570px;
+    width: 100%;
+    font-size: 20px;
   }
 
   &__title {
-    font-size: 32px;
-    font-weight: 600;
-    color: $secondary;
+    margin-bottom: 16px;
   }
+
+  &__txt {
+margin-bottom: 20px;
+  }
+
+  &__list {
+    margin-bottom: 72px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 20px;
+    
+  &::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $secondary;
+    top: 6px;
+    left: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  }
+
+
 }

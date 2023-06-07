@@ -51,7 +51,6 @@
 
     &:active, 
     &.current {
-      font-weight: 600;
       color: $dark;
 
       &::before {

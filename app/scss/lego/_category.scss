@@ -1,0 +1,24 @@
+.category {
+  background: linear-gradient(140deg, #DBF0EC, #F1F6F5, #F3F7EF);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    text-align: center;
+    &:not(:last-child) {
+      margin-right: 44px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: $secondary;
+  }
+}
