@@ -89,3 +89,31 @@ main {
     transition: fill 0.4s;
   }
 }
+
+.blog-card {
+  padding: 20px;
+  border-radius: 24px;
+  background-color: $bg;
+  display: flex;
+  flex-direction: column;
+
+
+  &__img {
+    object-fit: cover;
+    margin-bottom: 24px;
+    border-radius: 24px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    color: $secondary;
+    margin-bottom: 8px;
+  }
+
+  &__txt {
+    font-size: 18px;
+    margin-top: auto;
+
+  }
+}
