@@ -1,0 +1,56 @@
+.contact {
+ 
+  &__container {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 45%;
+  }
+  &__content {
+    text-align: center;
+    max-width: 530px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  &__txt {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 31px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 40px;
+    max-width: 350px;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  &__item {
+    color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--address {
+      align-items: flex-start;
+    }
+
+    &--big {
+      font-size: 30px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    margin-right: 8px;
+    
+  }
+
+}

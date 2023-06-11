@@ -12,11 +12,9 @@ $(function () {
   const slider = document.querySelector('.swiper');
 
   const swiper = new Swiper(slider, {
+    
     slidesPerView: 3,
     spaceBetween: 30, 
-    
-
-    // autoHeight:	false,
   
     pagination: {
       el: '.swiper-pagination',
@@ -25,9 +23,9 @@ $(function () {
     },
   
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   });
   
 });

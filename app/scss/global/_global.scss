@@ -96,12 +96,14 @@ main {
   background-color: $bg;
   display: flex;
   flex-direction: column;
+  height: 100%;
 
 
   &__img {
     object-fit: cover;
     margin-bottom: 24px;
     border-radius: 24px;
+    grid-row: 1;
   }
 
   &__title {
@@ -116,4 +118,33 @@ main {
     margin-top: auto;
 
   }
+}
+
+.form {
+  max-width: 530px;
+  margin: 0 auto;
+
+  &__input {
+    display: block;
+    padding: 16px;
+    width: 100%;
+    background-color: $bg-light;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+
+    &--textarea {
+      min-height: 120px;
+      max-height: 200px;
+      resize: vertical;
+      margin-bottom: 36px;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      color: $grey;
+    }
+  }
+
+  
 }

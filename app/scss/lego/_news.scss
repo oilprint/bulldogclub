@@ -1,6 +1,50 @@
+.card {
+  padding: 20px;
+  border-radius: 24px;
+  background-color: $bg;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__top {
+    background-image: url(../../images/articles/screening.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    min-height: 330px;
+    height: 100%;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 24px;
+
+    margin-bottom: 24px;
+  }
+
+
+  &__img {
+    object-fit: cover;
+    margin-bottom: 24px;
+    border-radius: 24px;
+    grid-row: 1;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    color: $secondary;
+    margin-bottom: 8px;
+  }
+
+  &__txt {
+    font-size: 18px;
+    margin-top: auto;
+
+  }
+}
+
 .swiper {
   padding-bottom: 50px;
-  
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -12,13 +56,18 @@
     display: flex;
     justify-content: center;
   }
-  
+
 }
 
 .swiper-slide {
-  
   &.swiper-slide-active {
-    transform: translatey(-62px) scaleY(1.2);
+    transform: translatey(-60px) scale(1.1);
+    margin-right: 30px;
+
+    .card__bottom {
+      transform: scaleY(0.87);
+    }
+
     
   }
 }
@@ -56,3 +105,5 @@
 .swiper-button-prev:after {
   display: none;
 }
+
+
