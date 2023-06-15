@@ -5,5 +5,17 @@ $light: #ffff;
 $dark: #133138;
 $accent-light: #E4EDEB;
 $bg: #F0F5F4;
-$grey: #ADABC3;
+$grey: #BCBCBC;
 $bg-light: #F1F6F5;
+$grey-dark: #647174;
+$grey-light: #ECECEC;
+
+
+
+
+%checkbox-hidden {
+   width: 0;
+   height: 0;
+   position: absolute;
+   z-index: -1;
+}

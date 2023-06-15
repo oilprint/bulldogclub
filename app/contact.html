@@ -34,7 +34,7 @@
 
             <li class=" header__item">
               <a class="header__link focus" href="#">
-                Breed Info
+                Blog
               </a>
             </li>
             <li class=" header__item">
@@ -50,9 +50,116 @@
 
           </ul>
         </nav>
-        <button class="button button--light focus" type="button">
+        <button class="button button--light focus" type="button" data-modal-button>
           Sign in
         </button>
+
+        <div class="backdrop hidden" data-modal>
+          <div class="modal">
+            <div class="modal__top">
+
+              <button class="modal__tab active" type="button" data-tab="tab-1">
+                Register
+              </button>
+              <button class="modal__tab" type="button" data-tab="tab-2">
+                Login
+              </button>
+            </div>
+
+            <div class="modal__content">
+
+              <div class="modal__item" data-tab-content id="tab-1">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="modal__item  hidden" data-tab-content id="tab-2">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <label class="form__label ">
+                    <input class="form__checkbox" type="checkbox">
+                    Remember me?
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                  <a class="form__link" href="#">
+                    Forgot Password?
+                  </a>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
   </header>
@@ -89,13 +196,24 @@
             </a>
           </div>
 
-          <form class="form" action="#">
-            <input class="form__input" type="text" name="name" required placeholder="Name">
-            <input class="form__input" type="text" name="email" required placeholder="Name">
-            <textarea class="form__input form__input--textarea" name="text" required
-              placeholder="Please type your message here..."></textarea>
+          <form class="form contact__form" action="#">
+            <label class="form__label">
+              Name
+              <input class="form__input" type="text" name="name" required>
+            </label>
+            <label class="form__label">
+              E-mail
+              <input class="form__input" type="text" name="email" required>
+            </label>
+            <label class="form__label">
+              Your message
+              <textarea class="form__input form__input--textarea" name="text" required
+                placeholder="Please type your message here..."></textarea>
+            </label>
+
+
             <button class="button" type="submit">
-             Send message
+              Send message
             </button>
           </form>
         </div>

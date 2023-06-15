@@ -1,6 +1,6 @@
+
 $(function () {
   
-
   $('.review__inner').slick({
     dots: true,
     arrows: true,
@@ -26,6 +26,7 @@ $(function () {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
   });
   
 });

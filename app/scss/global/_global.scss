@@ -24,6 +24,7 @@ main {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .logo {
   object-fit: cover;
 }
@@ -39,20 +40,24 @@ main {
   padding: 70px 0;
 }
 
- .sr-only {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   padding: 0;
-   margin: -1px;
-   overflow: hidden;
-   clip: rect(0, 0, 0, 0);
-   border: 0;
- }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 .social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
 
   &__link {
     display: flex;
@@ -65,29 +70,42 @@ main {
     transition: background-color 0.4s,
       outline 0.4s;
 
+    &--dark {
+      border: 1px solid $secondary;
+
+      .social__icon {
+        fill: $secondary;
+      }
+
+    }
+
     &:focus {
-      outline: solid 1px $light;
+      outline: solid 1px $dark;
       outline-offset: 4px;
     }
 
     &:hover {
-      background-color: $light;
+      background-color: $secondary;
 
       .social__icon {
-        fill: $secondary;
+        fill: $light;
       }
     }
 
     &:active {
       background-color: $dark;
     }
-
   }
 
   &__icon {
     fill: $light;
     transition: fill 0.4s;
   }
+
+
+
+
+
 }
 
 .blog-card {
@@ -121,8 +139,9 @@ main {
 }
 
 .form {
-  max-width: 530px;
+  width: 100%;
   margin: 0 auto;
+
 
   &__input {
     display: block;
@@ -130,8 +149,7 @@ main {
     width: 100%;
     background-color: $bg-light;
     border-radius: 10px;
-    margin-bottom: 20px;
-
+    margin: 4px 0 16px;
 
     &--textarea {
       min-height: 120px;
@@ -144,6 +162,259 @@ main {
       font-size: 16px;
       color: $grey;
     }
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__button {
+    width: 100%;
+    margin: 40px 0 20px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    color: $grey;
+  }
+}
+
+.form-search {
+  display: flex;
+
+  &__input {
+    display: block;
+    flex-grow: 1;
+    background-color: $light;
+    padding: 16px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  &::placeholder {
+    color: $grey;
+  }
+
+  &__button {
+    width: 50px;
+    padding: 0;
+    // width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    background-color: $secondary;
+
+    &:hover {
+      .form--search__icon {
+        fill: $primary;
+      }
+    }
+  }
+
+  &__icon {
+    fill: $light;
+    transition: fill 0.4s;
+  }
+}
+
+
+.article {
+  background-color: $accent-light;
+  border-radius: 24px;
+  width: 100%;
+
+  &__img {
+    object-fit: cover;
+    border-radius: 24px 24px 0 0;
+  }
+
+  &__bottom {
+    padding: 30px;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 600;
+    color: $secondary;
+    margin-bottom: 4px;
+  }
+
+  &__data {
+    margin-bottom: 15px;
+  }
+
+  &__txt {
+    margin-bottom: 10px;
+  }
+
+  &__bottom-link {
+    color: rgba($secondary, 0.6);
+  }
+}
+
+.data {
+  display: block;
+  padding-left: 20px;
+  font-size: 14px;
+  color: $grey;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(../../images/icons/calendar.svg);
+    left: 0;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+}
+
+.sidebar {
+  max-width: 370px;
+  width: 100%;
+
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $secondary;
+    margin-bottom: 12px;
+
+  }
+}
+
+.filter-search {
+  padding: 20px;
+  border-radius: 24px;
+  background-color: $bg-light;
+  margin-bottom: 40px;
+}
+
+.filter-category {
+  background-color: $light;
+  margin-bottom: 40px;
+
+  &__title {
+    margin-bottom: 12px;
+  }
+
+  &__label {
+    display: block;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+  }
+
+  &__checkbox-custom {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px;
+    background-color: $bg-light;
+    color: $primary;
+    border-radius: 10px;
+    text-transform: capitalize
+  }
+
+  &__checkbox {
+    @extend %checkbox-hidden;
+
+    &:checked+.filter-category__checkbox-custom {
+      background-color: $secondary;
+      color: $light;
+    }
+  }
+
+}
+
+.filter-tag {
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__label {
+    cursor: pointer;
+    display: block;
+    margin: 0 12px 12px 0;
+  }
+
+  &__checkbox {
+    @extend %checkbox-hidden;
+
+    &:checked+.filter-tag__checkbox-custom {
+      background-color: $secondary;
+      color: $light;
+      border-color: $secondary;
+    }
+  }
+
+  &__checkbox-custom {
+    display: block;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: $grey-dark;
+    border-radius: 4px;
+    border: 1px solid $grey;
+
+
+  }
+}
+
+.latest-post {
+  padding: 30px 20px;
+  background-color: $light;
+  border: 1px solid $grey;
+  border-radius: 24px;
+  margin-bottom: 40px;
+
+  &__list {
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+      border-bottom: 1px solid $grey-light;
+    }
+  }
+
+  &__link {
+    margin-right: 8px;
+    flex-grow: 1;
+  }
+
+  &__img {
+    object-fit: cover;
+    border: 4px;
+
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: $secondary;
+    margin-bottom: 8px;
+  }
+
+  &__content {
+    max-width: 240px;
+    width: 100%;
   }
 
   
