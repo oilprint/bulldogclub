@@ -1,5 +1,7 @@
 .header {
-  padding: 10px 0;
+  padding: 10px 0 24px;
+  background-color: $light;
+  border-bottom: 1px solid $grey;
 
   &__inner {
     display: flex;
@@ -58,6 +60,11 @@
         transform: scaleX(1);
       }
     }
+  }
+
+  &--index {
+    background-color: transparent;
+    border-bottom: none;
   }
 
 

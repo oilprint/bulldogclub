@@ -1,5 +1,7 @@
 $(function () {
 
+
+
   // Нашли все заголовки табов по data атрибуту
   const tabHeaders = document.querySelectorAll('[data-tab]');
 

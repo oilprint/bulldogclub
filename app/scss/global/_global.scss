@@ -218,7 +218,6 @@ main {
   }
 }
 
-
 .article {
   background-color: $accent-light;
   border-radius: 24px;
@@ -253,169 +252,61 @@ main {
   }
 }
 
-.data {
-  display: block;
-  padding-left: 20px;
-  font-size: 14px;
-  color: $grey;
+.breadcrumbs {
   position: relative;
-
+  display: inline-flex;
+  padding: 15px 0 40px 24px;
+  
   &::before {
     position: absolute;
-    content: '';
-    width: 16px;
-    height: 16px;
-    background-image: url(../../images/icons/calendar.svg);
-    left: 0;
-    top: 0px;
+    content: "";
+    background-image: url(../../images/icons/home.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    margin-bottom: 10px;
-  }
-}
-
-.sidebar {
-  max-width: 370px;
-  width: 100%;
-
-
-  &__title {
-    font-size: 24px;
-    line-height: 1.5;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: $secondary;
-    margin-bottom: 12px;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    bottom: 41px;
 
   }
-}
-
-.filter-search {
-  padding: 20px;
-  border-radius: 24px;
-  background-color: $bg-light;
-  margin-bottom: 40px;
-}
-
-.filter-category {
-  background-color: $light;
-  margin-bottom: 40px;
-
-  &__title {
-    margin-bottom: 12px;
-  }
-
-  &__label {
-    display: block;
-    cursor: pointer;
-
-    &:not(:last-child) {
-      margin-bottom: 15px;
-    }
-
-  }
-
-  &__checkbox-custom {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 16px;
-    background-color: $bg-light;
-    color: $primary;
-    border-radius: 10px;
-    text-transform: capitalize
-  }
-
-  &__checkbox {
-    @extend %checkbox-hidden;
-
-    &:checked+.filter-category__checkbox-custom {
-      background-color: $secondary;
-      color: $light;
-    }
-  }
-
-}
-
-.filter-tag {
-
-  &__form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  &__label {
-    cursor: pointer;
-    display: block;
-    margin: 0 12px 12px 0;
-  }
-
-  &__checkbox {
-    @extend %checkbox-hidden;
-
-    &:checked+.filter-tag__checkbox-custom {
-      background-color: $secondary;
-      color: $light;
-      border-color: $secondary;
-    }
-  }
-
-  &__checkbox-custom {
-    display: block;
-    padding: 10px 20px;
-    font-size: 17px;
-    color: $grey-dark;
-    border-radius: 4px;
-    border: 1px solid $grey;
-
-
-  }
-}
-
-.latest-post {
-  padding: 30px 20px;
-  background-color: $light;
-  border: 1px solid $grey;
-  border-radius: 24px;
-  margin-bottom: 40px;
 
   &__list {
-    width: 100%;
+    display: flex;
   }
 
   &__item {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
+    color: $grey;
+    padding-right: 40px;
+    position: relative;
 
-    &:not(:last-child) {
-      margin-bottom: 16px;
-      border-bottom: 1px solid $grey-light;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../../images/icons/breadcrumbs.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      width: 20px;
+      height: 20px;
+      bottom: 1px;
+      right: 10px;
+    }
+
+    &:last-child {
+      color: $secondary;
+      padding-right: 0;
+      &::after {
+        display: none;
+      }
+
     }
   }
 
   &__link {
-    margin-right: 8px;
-    flex-grow: 1;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: inherit; 
   }
 
-  &__img {
-    object-fit: cover;
-    border: 4px;
-
-  }
-
-  &__title {
-    font-size: 16px;
-    font-weight: 500;
-    color: $secondary;
-    margin-bottom: 8px;
-  }
-
-  &__content {
-    max-width: 240px;
-    width: 100%;
-  }
-
-  
 }
