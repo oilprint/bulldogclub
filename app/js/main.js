@@ -1,13 +1,11 @@
 
 $(function () {
-
-
-Fancybox.bind('[data-fancybox="gallery"]', {
-  //
-});
   
 
-  var mixer = mixitup('.gallery__list');
+
+
+
+  // var mixer = mixitup('.gallery__list');
 
     // pagination
 
@@ -53,12 +51,9 @@ Fancybox.bind('[data-fancybox="gallery"]', {
 
         });
       });
-
-
-      
     });
     
-  
+
     // swiper
 
   const slider = document.querySelector('.swiper');
@@ -81,6 +76,32 @@ Fancybox.bind('[data-fancybox="gallery"]', {
 
   });
 
-  Fancybox.bind('[data-fancybox]', { });
+  
+  Fancybox.bind('[data-fancybox="gallery"]', {
+  });
+
+
+  const btnnShow = document.querySelector('#show');
+  const cardShow = document.querySelectorAll('[data-show]');
+  console.log('data-show');
+     
+  btnnShow.addEventListener('click', function() {
+    if (
+    cardShow.forEach(function (item) {
+      item.classList.toggle('hidden');
+      console.log('hiddev');
+    })
+
+    ){
+      btnnShow.textContent = 'Show More';
+    } else {
+
+      btnnShow.textContent = 'Show Less';
+
+    }
+  });
+
+  
+
   
 });

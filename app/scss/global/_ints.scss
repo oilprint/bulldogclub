@@ -1,19 +1,19 @@
 .button {
-  display: block;
+  display: inline-block;
   padding: 16px 76px;
   border-radius: 4px;
   background-color: $secondary;
   color: $light;
   font-size: 20px;
   text-transform: capitalize;
-  
+
   &--light {
     padding: 8px 40px;
     background-color: transparent;
     border: 1px solid $primary;
     color: $dark;
     transition: color 0.4s,
-    background-color 0.4s, outline 0.4s;
+      background-color 0.4s, outline 0.4s;
 
     &:hover {
       background-color: $dark;
@@ -24,7 +24,6 @@
       background-color: $primary;
     }
   }
-
 }
 
 .focus {
@@ -33,4 +32,8 @@
     outline-offset: 4px;
     border-radius: 4px;
   }
+}
+
+.link {
+  color: rgba($secondary, 0.6);
 }
