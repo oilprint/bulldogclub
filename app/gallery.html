@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap"
     rel="stylesheet">
 
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -165,59 +165,143 @@
   </header>
 
   <main>
-    <section class="contact section">
-      <div class="container contact__container" style="background-image:url(images/contact-bg.png);">
-        <div class="contact__content">
-          <h2 class="title contact__title">
-            get in touch!
-          </h2>
-          <p class="contact__txt">
-            Contact us and ask whatever you want
-          </p>
 
-          <div class="contact__info">
-            <div class="contact__item contact__item--address">
-              <svg class=" contact__icon" width="20" height="20">
-                <use href="images/symbol-defs.svg#icon-geo"></use>
-              </svg>
-              4517 Washington Ave, Manchester Kentucky 39495
-            </div>
-            <a class="contact__item" href="mailto:georgia.young@example.com">
-              <svg class="contact__icon" width="20" height="20">
-                <use href="images/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              georgia.young@example.com
-            </a>
-            <a class="contact__item contact__item--big" href="tel:+16065550123">
-              <svg class="contact__icon" width="20" height="20">
-                <use href="images/symbol-defs.svg#icon-phone-call"></use>
-              </svg>
-              (606) 555-0123
-            </a>
-          </div>
+    <section class="gallery section">
+      <div class="container">
 
-          <form class="form contact__form" action="#">
-            <label class="form__label">
-              Name
-              <input class="form__input" type="text" name="name" required>
-            </label>
-            <label class="form__label">
-              E-mail
-              <input class="form__input" type="text" name="email" required>
-            </label>
-            <label class="form__label">
-              Your message
-              <textarea class="form__input form__input--textarea" name="text" required
-                placeholder="Please type your message here..."></textarea>
-            </label>
-            <button class="button contact__button" type="submit">
-              Send message
+        <h1 class="title gallery__title">
+          Our dogs
+        </h1>
+
+        <ul class="gallery__filter">
+          <li class="gallery__filter-item">
+            <button class="button button--light gallery__button" type="button" data-filter="all">
+              All
             </button>
-          </form>
-        </div>
-      </div>
+          </li>
+          <li class="gallery__filter-item">
+            <button class="button button--light gallery__button" type="button" data-filter=".french">
+              French bulldog
+            </button>
+          </li>
+          <li class="gallery__filter-item">
+            <button class="button button--light gallery__button" type="button" data-filter=".english">
+              English bulldog
+            </button>
+          </li>
+          <li class="gallery__filter-item">
+            <button class="button button--light gallery__button" type="button" data-filter=".american">
+              american bulldog
+            </button>
+          </li>
 
+        </ul>
+
+        <ul class="gallery__list">
+
+          <li class="gallery__item mix french">
+            <a class="gallery__link" href="images/gallery/img-big-01.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-01.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix english">
+            <a class="gallery__link" href="images/gallery/img-big-02.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-02.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+
+          <li class="gallery__item mix french">
+            <a class="gallery__link" href="images/gallery/img-big-20.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-20.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix american">
+            <a class="gallery__link" href="images/gallery/img-big-03.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-03.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix american">
+            <a class="gallery__link" href="images/gallery/img-big-04.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-04.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix french">
+            <a class="gallery__link" href="images/gallery/img-big-05.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-05.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix english">
+            <a class="gallery__link" href="images/gallery/img-big-06.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-06.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix english">
+            <a class="gallery__link" href="images/gallery/img-big-07.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-07.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix french">
+            <a class="gallery__link" href="images/gallery/img-big-08.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-08.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix french">
+            <a class="gallery__link" href="images/gallery/img-big-19.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-19.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix french">
+            <a class="gallery__link" href="images/gallery/img-big-09.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-09.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+         
+          <li class="gallery__item mix english">
+            <a class="gallery__link" href="images/gallery/img-big-12.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-12.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+
+          <li class="gallery__item mix french">
+            <a class="gallery__link" href="images/gallery/img-big-13.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-13.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix french">
+            <a class="gallery__link" href="images/gallery/img-big-14.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-14.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix american">
+            <a class="gallery__link" href="images/gallery/img-big-15.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-15.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+          <li class="gallery__item mix french">
+            <a class="gallery__link" href="images/gallery/img-big-16.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="images/gallery/img-big-16.jpg" width="270" height="200"
+                alt="French dog wear a sweater">
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
+
 
 
 
@@ -316,7 +400,7 @@
 
 
 
-
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->
 
   <script src=" js/main.min.js"> </script>
 </body>

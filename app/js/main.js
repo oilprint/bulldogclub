@@ -1,6 +1,14 @@
 
 $(function () {
 
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+  //
+});
+  
+
+  var mixer = mixitup('.gallery__list');
+
     // pagination
 
     const prevNext = document.querySelectorAll('.pagination__btn');
@@ -45,6 +53,9 @@ $(function () {
 
         });
       });
+
+
+      
     });
     
   
@@ -69,5 +80,7 @@ $(function () {
     },
 
   });
+
+  Fancybox.bind('[data-fancybox]', { });
   
 });

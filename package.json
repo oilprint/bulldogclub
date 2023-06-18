@@ -23,6 +23,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.19",
     "save-dev": "^0.0.1-security",
     "swiper": "^9.3.2"
   }

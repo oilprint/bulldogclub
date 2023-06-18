@@ -1,0 +1,47 @@
+.gallery {
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  &__filter-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__button {
+    font-size: 17px;
+
+     &.mixitup-control-active {
+       background-color: $secondary;
+       color: $light;
+  
+     }
+  }
+
+  &__img {
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+  }
+
+  &__item {
+   width: calc((100% - 3 * 30px) / 4);
+   
+  }
+
+
+}
