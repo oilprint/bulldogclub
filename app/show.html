@@ -12,7 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -27,30 +26,34 @@
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link focus" href="index.html">
+              <a class="header__link" href="index.html">
                 Home
               </a>
             </li>
 
             <li class=" header__item">
-              <a class="header__link focus" href="#">
-                Blog
-              </a>
-            </li>
-            <li class=" header__item">
-              <a class="header__link" href="#">
+              <a class="header__link  current" href="show.html">
                 Show&Events
               </a>
             </li>
             <li class=" header__item">
-              <a class="header__link focus  current" href="#">
+              <a class="header__link" href="gallery.html">
+                Gallery
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link" href="blog.html">
+                Blog
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link" href="contact.html">
                 Contact us
               </a>
             </li>
-
           </ul>
         </nav>
-        <button class="button button--light focus" type="button" data-modal-button>
+        <button class="btn-secondary" type="button" data-modal-button>
           Sign in
         </button>
 
@@ -158,57 +161,20 @@
           </div>
         </div>
 
-
-
       </div>
     </div>
   </header>
 
   <main>
-    <!-- <section class="show section">
-      <div class="container">
-        <h1 class="title">
-          Dog Shows
-        </h1>
-        <p class="show__txt show__txt--bold">
-          Origins of Dog Shows Dog shows originally started as events to assess the quality of breeding stock. They were
-          akin to agricultural shows and local fairs, where animals were exhibited. While this purpose still exists
-          today, dog shows have evolved to become enjoyable competitions and opportunities to meet and connect with
-          others who share a passion for specific dog breeds.
-        </p>
-        <img class="show__img" src="images/articles/blog-2.jpg" width="430" height="290" alt="">
-        <p class="show__txt">
-          Formal and Informal Dog Shows Dog shows can be categorized as either formal or informal. Formal shows
-          contribute to a dog's championship title by awarding points based on their performance. These shows can either
-          be all-breed or group shows, encompassing various breeds, or they can be specialty shows, focusing solely on
-          one specific breed.
-
-        </p>
-        <p class="show__txt">
-          On the other hand, informal shows, known as Match shows, do not count towards a dog's championship. They are
-          organized primarily for recreational purposes and to provide learning experiences for both the dogs and the
-          exhibitors. Match shows can include all-breed, group, or specialty categories, depending on the event.
-        </p>
-        <p class="show__txt">
-          Shows can be categorized into Conformation shows and Companion shows. Conformation shows involve evaluating
-          each dog based on the breed's established standard, which describes the ideal characteristics. On the other
-          hand, Companion shows, also known as Performance and Civic Activities events, encompass a variety of
-          activities such as Obedience, Agility, and other tasks that assess a dog's ability to learn and perform
-          specific tasks.
-        </p>
-      </div>
-    </section> -->
-
-
+      
     <section class="about section about--right">
       <div class="about__container">
         <div class="about__inner">
-
           <div class="about__content">
 
-            <h2 class="title about__title">
+            <h1 class="title about__title">
               Dog Shows
-            </h2>
+            </h1>
             <div class="about__info">
               <p class="about__txt">
                 Formal and Informal Dog Shows Dog shows can be categorized as either formal or informal. Formal shows
@@ -257,93 +223,101 @@
         <p class="calendar__subtitle">
           The Show Calendar provides information on the current and upcoming shows
         </p>
-        <ul class="calendar__list">
-          <li class="calendar__item">
-            <a class="calendar__link" href="#">
-              <p class="calendar__data">
-                5 Jan
-                <span class="calendar__day">
-                  Thursday
-                </span>
-              </p>
-              <p class="calendar__event">
-                MANCHESTER CHAMPIONSHIP SHOW
-              </p>
-              <p class="calendar__city">
-                Manchester
-              </p>
-            </a>
-          </li>
-          <li class="calendar__item">
-            <a class="calendar__link" href="#">
-              <p class="calendar__data">
-                5 Jan
-                <span class="calendar__day">
-                  Thursday
-                </span>
-              </p>
-              <p class="calendar__event">
-                MANCHESTER CHAMPIONSHIP SHOW
-              </p>
-              <p class="calendar__city">
-                Manchester
-              </p>
-            </a>
-          </li>
-          <li class="calendar__item">
-            <a class="calendar__link" href="#">
-              <p class="calendar__data">
-                5 Jan
-                <span class="calendar__day">
-                  Thursday
-                </span>
-              </p>
-              <p class="calendar__event">
-                MANCHESTER CHAMPIONSHIP SHOW
-              </p>
-              <p class="calendar__city">
-                Manchester
-              </p>
-            </a>
-          </li>
 
-          <li class="calendar__item hidden" data-show>
-            <a class="calendar__link" href="#">
-              <p class="calendar__data">
-                5 Jan
-                <span class="calendar__day">
-                  Thursday
-                </span>
-              </p>
-              <p class="calendar__event">
-                MANCHESTER CHAMPIONSHIP SHOW
-              </p>
-              <p class="calendar__city">
-                Manchester
-              </p>
-            </a>
-          </li>
-          <li class="calendar__item hidden" data-show>
-            <a class="calendar__link" href="#">
-              <p class="calendar__data">
-                5 Jan
-                <span class="calendar__day">
-                  Thursday
-                </span>
-              </p>
-              <p class="calendar__event">
-                MANCHESTER CHAMPIONSHIP SHOW
-              </p>
-              <p class="calendar__city">
-                Manchester
-              </p>
-            </a>
-          </li>
-        </ul>
+        <div class="calendar__wrapper">
+          <ul class="calendar__list">
+            <li class="calendar__item">
+              <a class="calendar__link" href="#">
+                <p class="calendar__data">
+                  5 Jan
+                  <span class="calendar__day">
+                    Thursday
+                  </span>
+                </p>
+                <p class="calendar__event">
+                  MANCHESTER CHAMPIONSHIP SHOW
+                </p>
+                <p class="calendar__city">
+                  Manchester
+                </p>
+              </a>
+            </li>
+            <li class="calendar__item">
+              <a class="calendar__link" href="#">
+                <p class="calendar__data">
+                  5 Jan
+                  <span class="calendar__day">
+                    Thursday
+                  </span>
+                </p>
+                <p class="calendar__event">
+                  MANCHESTER CHAMPIONSHIP SHOW
+                </p>
+                <p class="calendar__city">
+                  Manchester
+                </p>
+              </a>
+            </li>
+            <li class="calendar__item">
+              <a class="calendar__link" href="#">
+                <p class="calendar__data">
+                  5 Jan
+                  <span class="calendar__day">
+                    Thursday
+                  </span>
+                </p>
+                <p class="calendar__event">
+                  MANCHESTER CHAMPIONSHIP SHOW
+                </p>
+                <p class="calendar__city">
+                  Manchester
+                </p>
+              </a>
+            </li>
+          </ul>
 
-        <button class="button show__button" id="show" type="button">
+          <ul class="calendar__list hidden" data-show>
+
+            <li class="calendar__item" >
+              <a class="calendar__link" href="#">
+                <p class="calendar__data">
+                  5 Jan
+                  <span class="calendar__day">
+                    Thursday
+                  </span>
+                </p>
+                <p class="calendar__event">
+                  MANCHESTER CHAMPIONSHIP SHOW
+                </p>
+                <p class="calendar__city">
+                  Manchester
+                </p>
+              </a>
+            </li>
+            <li class="calendar__item">
+              <a class="calendar__link" href="#">
+                <p class="calendar__data">
+                  5 Jan
+                  <span class="calendar__day">
+                    Thursday
+                  </span>
+                </p>
+                <p class="calendar__event">
+                  MANCHESTER CHAMPIONSHIP SHOW
+                </p>
+                <p class="calendar__city">
+                  Manchester
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+     
+        <button class="button" id="show" type="button">
           Show More
+         
         </button>
+
       </div>
     </section>
   </main>
@@ -437,6 +411,8 @@
 
   </footer>
 
+
+  
 
   <script src=" js/main.min.js"> </script>
 </body>
