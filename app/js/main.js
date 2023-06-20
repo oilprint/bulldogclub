@@ -1,107 +1,101 @@
 
 $(function () {
   
-
-
-
-
   // var mixer = mixitup('.gallery__list');
 
-    // pagination
+//     // pagination
 
-    const prevNext = document.querySelectorAll('.pagination__btn');
-    const  numbers = document.querySelectorAll('.pagination__link');
+//     const prevNext = document.querySelectorAll('.pagination__btn');
+//     const  numbers = document.querySelectorAll('.pagination__link');
 
-    let currentStep = 0;
+//     let currentStep = 0;
 
-    const updateBtn = () => {
-      if (currentStep === 3) {
-        prevNext[1].disabled = true;
-      } else if (currentStep === 0) {
-        prevNext[0].disabled = true;
-      } else {
-        prevNext[1].disabled = false;
-        prevNext[0].disabled =false;
-      }
-    };
+//     const updateBtn = () => {
+//       if (currentStep === 3) {
+//         prevNext[1].disabled = true;
+//       } else if (currentStep === 0) {
+//         prevNext[0].disabled = true;
+//       } else {
+//         prevNext[1].disabled = false;
+//         prevNext[0].disabled =false;
+//       }
+//     };
 
-    numbers.forEach((number, numIndex) => {
-      number.addEventListener('click', (e) => {
-        e.preventDefault();
+//     numbers.forEach((number, numIndex) => {
+//       number.addEventListener('click', (e) => {
+//         e.preventDefault();
         
-        currentStep = numIndex;
+//         currentStep = numIndex;
 
-        document.querySelector('.pagination__link--active').classList.remove('pagination__link--active');
+//         document.querySelector('.pagination__link--active').classList.remove('pagination__link--active');
 
-        number.classList.add('pagination__link--active');
-        updateBtn();
+//         number.classList.add('pagination__link--active');
+//         updateBtn();
 
-      });
-    });
+//       });
+//     });
 
+//     prevNext.forEach(button => {
+//       button.addEventListener('click', (e) => {
+//         currentStep += e.target.id === 'next' ? 1 : -1;
+//         numbers.forEach((number, numIndex) => {
+//           console.log(numIndex, currentStep);
 
-    prevNext.forEach(button => {
-      button.addEventListener('click', (e) => {
-        currentStep += e.target.id === 'next' ? 1 : -1;
-        numbers.forEach((number, numIndex) => {
-          console.log(numIndex, currentStep);
+//           number.classList.toggle('pagination__link--active', numIndex === currentStep);
+//           updateBtn();
 
-          number.classList.toggle('pagination__link--active', numIndex === currentStep);
-          updateBtn();
+//         });
+//       });
+//     });
 
-        });
-      });
-    });
+//     //end pagination
     
+//   Fancybox.bind('[data-fancybox="gallery"]', {
+//   });
 
-    // swiper
+// // show more
 
-  const slider = document.querySelector('.swiper');
-
-  const swiper = new Swiper(slider, {
-    
-    slidesPerView: 3,
-    spaceBetween: 30, 
-  
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-  });
-
-  
-  Fancybox.bind('[data-fancybox="gallery"]', {
-  });
-
-
-  const btnnShow = document.querySelector('#show');
-  const cardShow = document.querySelectorAll('[data-show]');
-  console.log('data-show');
+//   const btnnShow = document.querySelector('#show');
+//   const cardShow = document.querySelectorAll('[data-show]');
+//   console.log('data-show');
      
-  btnnShow.addEventListener('click', function() {
-    if (
-    cardShow.forEach(function (item) {
-      item.classList.toggle('hidden');
-      console.log('hiddev');
-    })
+//   btnnShow.addEventListener('click', function() {
+//     if (
+//     cardShow.forEach(function (item) {
+//       item.classList.toggle('hidden');
+//       console.log('hiddev');
+//     })
 
-    ){
-      btnnShow.textContent = 'Show More';
-    } else {
+//     ){
+//       btnnShow.textContent = 'Show More';
+//     } else {
 
-      btnnShow.textContent = 'Show Less';
+//       btnnShow.textContent = 'Show Less';
 
-    }
-  });
+//     }
+//   });
 
-  
+  // show more end
+
+//swiper
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 3,
+  spaceBetween: 30, 
+
+
+   pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+//swiper end
 
   
 });

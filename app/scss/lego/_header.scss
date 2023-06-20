@@ -1,5 +1,5 @@
 .header {
-  padding: 10px 0 24px;
+  padding: 10px 0;
   background-color: $light;
   border-bottom: 1px solid $grey;
 
@@ -16,24 +16,23 @@
   &__list {
     display: flex;
     justify-content: space-between;
-  
   }
 
   &__item:not(:last-child) {
-    margin-right: 32px;
+    margin-right: 35px;
   }
 
   &__link {
     display: block;
-    color: $secondary;
-    font-size: 20px;
+    color: $grey-dark;
+    font-size: 18px;
     line-height: 2.5;
     text-transform: uppercase;
     position: relative;
-    transition: transform 0.4s;
+    transition: outline 0.4s, color 0.4s;
 
     &::before {
-      content: "";
+      content: ""; 
       position: absolute;
       bottom: 0;
       left: 0;
@@ -44,6 +43,20 @@
       transition: transform 0.4s;
     }
 
+     &.current {
+       color: $secondary;
+
+       &::before {
+         transform: scaleX(1);
+       }
+     }
+
+    &:focus {
+      outline: solid 1px $secondary;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
     &:hover {
       color: $accent;
 
@@ -52,9 +65,8 @@
       }
     }
 
-    &:active, 
-    &.current {
-      color: $dark;
+    &:active {
+      color: $accent-dark;
 
       &::before {
         transform: scaleX(1);
@@ -66,6 +78,4 @@
     background-color: transparent;
     border-bottom: none;
   }
-
-
 }

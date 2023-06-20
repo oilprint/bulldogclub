@@ -33,7 +33,6 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
-    'node_modules/swiper/swiper-bundle.js',
     'node_modules/mixitup/dist/mixitup.js',
     'node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js',
     'app/js/modal.js',  
