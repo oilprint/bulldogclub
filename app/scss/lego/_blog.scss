@@ -3,7 +3,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 70px 0 70px;
+    padding: 70px 0;
   }
 
   &__content {
@@ -250,6 +250,10 @@
     margin-right: 30px;
   }
 
+  &__breadcrumbs {
+    margin-bottom: 25px;
+  }
+
   &__sidebar {
     padding-top: 76px;
   }
@@ -257,6 +261,7 @@
   &__img {
     object-fit: cover;
     border-radius: 24px;
+    margin-bottom: 30px;
   }
 
   h1 {
@@ -272,11 +277,11 @@
     font-size: 28px;
     font-weight: 600;
     color: $secondary;
-    margin: 20px 0 12px;
+    margin-bottom: 15px;
   }
 
   p {
-    margin-bottom: 4px;
+    margin-bottom: 10px;
    
   }
 
@@ -287,7 +292,7 @@
     padding: 30px 40px;
     border-radius: 24px;
     box-shadow: 3px 3px 0px $secondary;
-    margin: 20px auto 50px;
+    margin: 50px auto;
   }
 
    &__img-right {
@@ -301,10 +306,6 @@
      border-radius: 24px;
      margin: 0 30px 20px 0;
    }
-
-  &__txt {
-    padding-top: 30px;
-  }
 
   &__data {
     margin-bottom: 20px;

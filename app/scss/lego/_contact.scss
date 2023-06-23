@@ -12,17 +12,21 @@
     margin-left: auto;
   }
 
+  &__title {
+    margin-bottom: 10px;
+  }
+
   &__txt {
     font-size: 22px;
     line-height: 1.5;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   &__info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto 60px;
+    margin: 0 auto 40px;
     max-width: 350px;
     width: 100%;
     font-size: 18px;

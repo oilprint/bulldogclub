@@ -18,7 +18,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header header--index">
     <div class="container">
       <div class="header__inner">
         <a class="logo focus header__logo" href="#">
@@ -27,30 +27,34 @@
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link focus" href="index.html">
+              <a class="header__link" href="index.html">
                 Home
               </a>
             </li>
 
             <li class=" header__item">
-              <a class="header__link focus" href="blog.html">
-                Blog
-              </a>
-            </li>
-            <li class=" header__item">
-              <a class="header__link" href="#">
+              <a class="header__link" href="show.html">
                 Show&Events
               </a>
             </li>
             <li class=" header__item">
-              <a class="header__link focus" href="contact.html">
+              <a class="header__link" href="gallery.html">
+                Gallery
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link  current" href="blog.html">
+                Blog
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link" href="contact.html">
                 Contact us
               </a>
             </li>
-
           </ul>
         </nav>
-        <button class="button button--light focus" type="button" data-modal-button>
+        <button class="btn-secondary" type="button" data-modal-button>
           Sign in
         </button>
 
@@ -155,8 +159,16 @@
                 </ul>
               </div>
             </div>
+
+            <button class="modal__btn" type="button" data-modal-close>
+              <svg class="modal__icon" width="32" height="32">
+                <use href="images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+
           </div>
         </div>
+
 
 
 
@@ -164,11 +176,12 @@
     </div>
   </header>
 
+
   <div class="blog-one container">
     <div class="blog-one__wrapper">
 
       <main class="blog-one__content">
-        <div class="breadcrumbs">
+        <div class="breadcrumbs blog-one__breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
               <a href="#" class="breadcrumbs__link">
@@ -178,17 +191,12 @@
 
             <li class="breadcrumbs__item">
               <a href="#" class="breadcrumbs__link">
-                Home
+                Blog
               </a>
             </li>
             <li class="breadcrumbs__item">
               <a href="#" class="breadcrumbs__link">
-                Home
-              </a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a href="#" class="breadcrumbs__link">
-                Home
+                Blog-one
               </a>
             </li>
 
@@ -197,7 +205,7 @@
 
         <div class=" blog-one__inner">
 
-          <img class="blog-one__img" src="images/articles/blog-1.jpg" alt="" width="770" height="400">
+          <img class="blog-one__img" src="images/articles/blog-3.jpg" alt="" width="770" height="400">
 
           <div class="blog-one__txt">
             <h1>

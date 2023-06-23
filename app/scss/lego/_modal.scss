@@ -10,6 +10,7 @@
   backdrop-filter: blur(1px);
   transition: opacity 0.2s;
 
+
   &.hidden {
     opacity: 0;
     pointer-events: none;
@@ -27,7 +28,49 @@
   width: 670px;
   padding: 70px;
   background-color: $light;
+
   transition: transform 0.5s;
+
+  &__btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba($grey, 0.1);
+    transition: border-color 0.4s, border 0.4s,
+      box-shadow 0.4s;
+
+    &:focus {
+      border-color: $grey;
+    }
+
+    &:hover {
+      border: 1px solid $grey;
+
+      .modal__icon {
+        fill: $secondary;
+      }
+    }
+
+    &:active {
+      border: 1px solid rgba($grey, 0.1);
+      
+
+      .modal__icon {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__icon {
+    fill: $grey;
+    transition: fill 0.3s;
+  }
 
   &__top {
     margin-bottom: 40px;
@@ -42,7 +85,7 @@
     width: 100%;
     text-align: center;
     color: $grey;
-    
+
 
     &.active {
       color: $secondary;

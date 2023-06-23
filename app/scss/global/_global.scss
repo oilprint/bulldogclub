@@ -160,14 +160,13 @@ main {
   width: 100%;
   margin: 0 auto;
 
-
   &__input {
     display: block;
     padding: 16px;
     width: 100%;
     background-color: $bg-light;
     border-radius: 10px;
-    margin: 4px 0 16px;
+    margin: 4px 0 20px;
 
     &--textarea {
       min-height: 120px;
@@ -258,7 +257,7 @@ main {
   }
 
   &__data {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   &__txt {
@@ -271,7 +270,7 @@ main {
 .breadcrumbs {
   position: relative;
   display: inline-flex;
-  padding: 15px 0 40px 24px;
+  padding: 15px 0 15px 24px;
   
   &::before {
     position: absolute;
@@ -283,7 +282,7 @@ main {
     width: 20px;
     height: 20px;
     left: 0;
-    bottom: 41px;
+    bottom: 16px;
 
   }
 

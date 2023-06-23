@@ -18,7 +18,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header header--index">
     <div class="container">
       <div class="header__inner">
         <a class="logo focus header__logo" href="#">
@@ -27,30 +27,34 @@
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link focus" href="index.html">
+              <a class="header__link" href="index.html">
                 Home
               </a>
             </li>
 
             <li class=" header__item">
-              <a class="header__link focus current" href="#">
-                Blog
-              </a>
-            </li>
-            <li class=" header__item">
-              <a class="header__link" href="#">
+              <a class="header__link" href="show.html">
                 Show&Events
               </a>
             </li>
             <li class=" header__item">
-              <a class="header__link focus" href="contact.html">
+              <a class="header__link" href="gallery.html">
+                Gallery
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link  current" href="blog.html">
+                Blog
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link" href="contact.html">
                 Contact us
               </a>
             </li>
-
           </ul>
         </nav>
-        <button class="button button--light focus" type="button" data-modal-button>
+        <button class="btn-secondary" type="button" data-modal-button>
           Sign in
         </button>
 
@@ -155,14 +159,23 @@
                 </ul>
               </div>
             </div>
+
+            <button class="modal__btn" type="button" data-modal-close>
+              <svg class="modal__icon" width="32" height="32">
+                <use href="images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+
           </div>
         </div>
+
 
 
 
       </div>
     </div>
   </header>
+
 
   <div class="blog container">
     <div class="blog__wrapper">
@@ -171,23 +184,21 @@
         <ul class="blog__list">
           <li class="blog__item">
             <article class="article">
-              <a class="article__top" href="blog-one.html">
-                <img class="blog-img" src="images/articles/blog-1.jpg" alt="" width="770" height="400">
-              </a>
+
+              <img class="blog-img" src="images/articles/blog-3.jpg" alt="" width="770" height="400">
+
               <div class="article__bottom">
-                <a class="article__link" href="blog-one.html">
-                  <h2 class="article__title">
-                    How to introduce your pup to visitors: 6 simple steps
-                  </h2>
-                </a>
+                <h2 class="article__title">
+                  Rare and unusual colours
+                </h2>
+
                 <time class="data article__data">Jun 05 2022</time>
                 <p class="article__txt">
-                  Ready to buy a dog? Why not use our Find a Puppy service to discover the ideal four-legged friend
-                  for
-                  you. Ready to buy
-                  a dog? Why not use our Find a Puppy service to discover the ideal four-legged friend for you.
+                  Before buying a puppy it’s useful to know that every breed of pedigree dog has a list of ideal
+                  recognised colours described in their breed standard (a description and guide to what a breed looks
+                  and acts like).
                 </p>
-                <a href="#" class="link">
+                <a class="link" href="blog-one.html">
                   Continue reading
                 </a>
 
@@ -197,12 +208,11 @@
 
           <li class="blog__item">
             <article class="article">
+
               <div class="article__bottom">
-                <a class="article__link" href="#">
-                  <h2 class="article__title">
-                    How to introduce your pup to visitors: 6 simple steps
-                  </h2>
-                </a>
+                <h2 class="article__title">
+                  How to introduce your pup to visitors: 6 simple steps
+                </h2>
 
                 <time class="data article__data">Jun 05 2022</time>
                 <p class="article__txt">
@@ -211,7 +221,7 @@
                   you. Ready to buy
                   a dog? Why not use our Find a Puppy service to discover the ideal four-legged friend for you.
                 </p>
-                <a href="#" class="link">
+                <a class="link" href="blog-one.html">
                   Continue reading
                 </a>
 
@@ -221,14 +231,13 @@
 
           <li class="blog__item">
             <article class="article">
-              <a class="article__top" href="#"></a>
-              <img class="article__img" src="images/articles/blog-1.jpg" alt="" width="770" height="400">
+
+              <img class="blog-img" src="images/articles/blog-4.jpg" alt="" width="770" height="400">
+
               <div class="article__bottom">
-                <a class="article__link" href="#">
-                  <h2 class="article__title">
-                    How to introduce your pup to visitors: 6 simple steps
-                  </h2>
-                </a>
+                <h2 class="article__title">
+                  Change of ownership
+                </h2>
 
                 <time class="data article__data">Jun 05 2022</time>
                 <p class="article__txt">
@@ -237,7 +246,7 @@
                   you. Ready to buy
                   a dog? Why not use our Find a Puppy service to discover the ideal four-legged friend for you.
                 </p>
-                <a href="#" class="link">
+                <a class="link" href="blog-one.html">
                   Continue reading
                 </a>
 
@@ -247,14 +256,13 @@
 
           <li class="blog__item">
             <article class="article">
-              <a class="article__top" href="#"></a>
-              <img class="article__img" src="images/articles/blog-1.jpg" alt="" width="770" height="400">
+
+              <img class="blog-img" src="images/articles/blog-1.jpg" alt="" width="770" height="400">
+
               <div class="article__bottom">
-                <a class="article__link" href="#">
-                  <h2 class="article__title">
-                    How to introduce your pup to visitors: 6 simple steps
-                  </h2>
-                </a>
+                <h2 class="article__title">
+                  How to introduce your pup to visitors: 6 simple steps
+                </h2>
 
                 <time class="data article__data">Jun 05 2022</time>
                 <p class="article__txt">
@@ -263,31 +271,7 @@
                   you. Ready to buy
                   a dog? Why not use our Find a Puppy service to discover the ideal four-legged friend for you.
                 </p>
-                <a class="link" href="#">
-                  Continue reading
-                </a>
-
-              </div>
-            </article>
-          </li>
-
-          <li class="blog__item">
-            <article class="article">
-              <div class="article__bottom">
-                <a class="article__link" href="#">
-                  <h2 class="article__title">
-                    How to introduce your pup to visitors: 6 simple steps
-                  </h2>
-                </a>
-
-                <time class="data article__data">Jun 05 2022</time>
-                <p class="article__txt">
-                  Ready to buy a dog? Why not use our Find a Puppy service to discover the ideal four-legged friend
-                  for
-                  you. Ready to buy
-                  a dog? Why not use our Find a Puppy service to discover the ideal four-legged friend for you.
-                </p>
-                <a href="#" class="link">
+                <a class="link" href="blog-one.html">
                   Continue reading
                 </a>
 

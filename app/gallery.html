@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bulldog Club | Contact Us</title>
+  <title>Bulldog Club | Gallery</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,160 +19,168 @@
 
 <body>
 
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <a class="logo focus header__logo" href="#">
-          <img class="logo__img" src="images/logo.jpg" width="104" height="86" alt="Logo Bulldog Club">
-        </a>
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link" href="index.html">
-                Home
-              </a>
-            </li>
+ <header class="header header--index">
+   <div class="container">
+     <div class="header__inner">
+       <a class="logo focus header__logo" href="#">
+         <img class="logo__img" src="images/logo.jpg" width="104" height="86" alt="Logo Bulldog Club">
+       </a>
+       <nav class="header__menu">
+         <ul class="header__list">
+           <li class="header__item">
+             <a class="header__link" href="index.html">
+               Home
+             </a>
+           </li>
 
-            <li class=" header__item">
-              <a class="header__link" href="show.html">
-                Show&Events
-              </a>
-            </li>
-            <li class=" header__item">
-              <a class="header__link current" href="gallery.html">
-                Gallery
-              </a>
-            </li>
-            <li class=" header__item">
-              <a class="header__link" href="blog.html">
-                Blog
-              </a>
-            </li>
-            <li class=" header__item">
-              <a class="header__link" href="contact.html">
-                Contact us
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button class="btn-secondary" type="button" data-modal-button>
-          Sign in
-        </button>
+           <li class=" header__item">
+             <a class="header__link" href="show.html">
+               Show&Events
+             </a>
+           </li>
+           <li class=" header__item">
+             <a class="header__link  current" href="gallery.html">
+               Gallery
+             </a>
+           </li>
+           <li class=" header__item">
+             <a class="header__link" href="blog.html">
+               Blog
+             </a>
+           </li>
+           <li class=" header__item">
+             <a class="header__link" href="contact.html">
+               Contact us
+             </a>
+           </li>
+         </ul>
+       </nav>
+       <button class="btn-secondary" type="button" data-modal-button>
+         Sign in
+       </button>
 
-        <div class="backdrop hidden" data-modal>
-          <div class="modal">
-            <div class="modal__top">
+       <div class="backdrop hidden" data-modal>
+         <div class="modal">
+           <div class="modal__top">
 
-              <button class="modal__tab active" type="button" data-tab="tab-1">
-                Register
-              </button>
-              <button class="modal__tab" type="button" data-tab="tab-2">
-                Login
-              </button>
-            </div>
+             <button class="modal__tab active" type="button" data-tab="tab-1">
+               Register
+             </button>
+             <button class="modal__tab" type="button" data-tab="tab-2">
+               Login
+             </button>
+           </div>
 
-            <div class="modal__content">
+           <div class="modal__content">
 
-              <div class="modal__item" data-tab-content id="tab-1">
-                <form class="form modal__form" action="#">
-                  <label class="form__label ">
-                    E-mail address*
-                    <input class="form__input" type="text" required>
-                  </label>
-                  <label class="form__label">
-                    Password*
-                    <input class="form__input" type="password" required>
-                  </label>
-                  <button class="button form__button" type="submit">
-                    Sing Up
-                  </button>
-                </form>
+             <div class="modal__item" data-tab-content id="tab-1">
+               <form class="form modal__form" action="#">
+                 <label class="form__label ">
+                   E-mail address*
+                   <input class="form__input" type="text" required>
+                 </label>
+                 <label class="form__label">
+                   Password*
+                   <input class="form__input" type="password" required>
+                 </label>
+                 <button class="button form__button" type="submit">
+                   Sing Up
+                 </button>
+               </form>
 
-                <ul class="social modal__social">
-                  <li class="social__item">
-                    <a class="social__link social__link--dark" href="#">
-                      <svg class="social__icon" width="30" height="30">
-                        <use href="images/symbol-defs.svg#icon-fb"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link--dark" href="#">
-                      <svg class="social__icon" width="30" height="30">
-                        <use href="images/symbol-defs.svg#icon-inst"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link--dark" href="#">
-                      <svg class="social__icon social__icon--dark" width="30" height="30">
-                        <use href="images/symbol-defs.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+               <ul class="social modal__social">
+                 <li class="social__item">
+                   <a class="social__link social__link--dark" href="#">
+                     <svg class="social__icon" width="30" height="30">
+                       <use href="images/symbol-defs.svg#icon-fb"></use>
+                     </svg>
+                   </a>
+                 </li>
+                 <li class="social__item">
+                   <a class="social__link social__link--dark" href="#">
+                     <svg class="social__icon" width="30" height="30">
+                       <use href="images/symbol-defs.svg#icon-inst"></use>
+                     </svg>
+                   </a>
+                 </li>
+                 <li class="social__item">
+                   <a class="social__link social__link--dark" href="#">
+                     <svg class="social__icon social__icon--dark" width="30" height="30">
+                       <use href="images/symbol-defs.svg#icon-twitter"></use>
+                     </svg>
+                   </a>
+                 </li>
+               </ul>
 
-              </div>
-              <div class="modal__item  hidden" data-tab-content id="tab-2">
-                <form class="form modal__form" action="#">
-                  <label class="form__label ">
-                    E-mail address*
-                    <input class="form__input" type="text" required>
-                  </label>
-                  <label class="form__label">
-                    Password*
-                    <input class="form__input" type="password" required>
-                  </label>
-                  <label class="form__label ">
-                    <input class="form__checkbox" type="checkbox">
-                    Remember me?
-                  </label>
-                  <button class="button form__button" type="submit">
-                    Sing Up
-                  </button>
-                  <a class="form__link" href="#">
-                    Forgot Password?
-                  </a>
-                </form>
+             </div>
+             <div class="modal__item  hidden" data-tab-content id="tab-2">
+               <form class="form modal__form" action="#">
+                 <label class="form__label ">
+                   E-mail address*
+                   <input class="form__input" type="text" required>
+                 </label>
+                 <label class="form__label">
+                   Password*
+                   <input class="form__input" type="password" required>
+                 </label>
+                 <label class="form__label ">
+                   <input class="form__checkbox" type="checkbox">
+                   Remember me?
+                 </label>
+                 <button class="button form__button" type="submit">
+                   Sing Up
+                 </button>
+                 <a class="form__link" href="#">
+                   Forgot Password?
+                 </a>
+               </form>
 
-                <ul class="social modal__social">
-                  <li class="social__item">
-                    <a class="social__link social__link--dark" href="#">
-                      <svg class="social__icon" width="30" height="30">
-                        <use href="images/symbol-defs.svg#icon-fb"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link--dark" href="#">
-                      <svg class="social__icon" width="30" height="30">
-                        <use href="images/symbol-defs.svg#icon-inst"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link--dark" href="#">
-                      <svg class="social__icon social__icon--dark" width="30" height="30">
-                        <use href="images/symbol-defs.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+               <ul class="social modal__social">
+                 <li class="social__item">
+                   <a class="social__link social__link--dark" href="#">
+                     <svg class="social__icon" width="30" height="30">
+                       <use href="images/symbol-defs.svg#icon-fb"></use>
+                     </svg>
+                   </a>
+                 </li>
+                 <li class="social__item">
+                   <a class="social__link social__link--dark" href="#">
+                     <svg class="social__icon" width="30" height="30">
+                       <use href="images/symbol-defs.svg#icon-inst"></use>
+                     </svg>
+                   </a>
+                 </li>
+                 <li class="social__item">
+                   <a class="social__link social__link--dark" href="#">
+                     <svg class="social__icon social__icon--dark" width="30" height="30">
+                       <use href="images/symbol-defs.svg#icon-twitter"></use>
+                     </svg>
+                   </a>
+                 </li>
+               </ul>
+             </div>
+           </div>
+
+           <button class="modal__btn" type="button" data-modal-close>
+             <svg class="modal__icon" width="32" height="32">
+               <use href="images/symbol-defs.svg#icon-close"></use>
+             </svg>
+           </button>
+
+         </div>
+       </div>
 
 
 
 
-      </div>
-    </div>
-  </header>
+     </div>
+   </div>
+ </header>
+
 
   <main>
 
-    <section class="gallery section">
+    <section class="gallery section gallery__section">
       <div class="container">
 
         <h1 class="title gallery__title">
@@ -206,100 +214,100 @@
 
           <li class="gallery__item mix french">
             <a class="gallery__link" href="images/gallery/img-big-01.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-01.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-01.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix english">
             <a class="gallery__link" href="images/gallery/img-big-02.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-02.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-02.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
 
           <li class="gallery__item mix french">
             <a class="gallery__link" href="images/gallery/img-big-20.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-20.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-20.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix american">
             <a class="gallery__link" href="images/gallery/img-big-03.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-03.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-03.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix american">
             <a class="gallery__link" href="images/gallery/img-big-04.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-04.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-04.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix french">
             <a class="gallery__link" href="images/gallery/img-big-05.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-05.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-05.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix english">
             <a class="gallery__link" href="images/gallery/img-big-06.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-06.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-06.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix english">
             <a class="gallery__link" href="images/gallery/img-big-07.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-07.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-07.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix french">
             <a class="gallery__link" href="images/gallery/img-big-08.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-08.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-08.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix french">
             <a class="gallery__link" href="images/gallery/img-big-19.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-19.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-19.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix french">
             <a class="gallery__link" href="images/gallery/img-big-09.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-09.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-09.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
          
           <li class="gallery__item mix english">
             <a class="gallery__link" href="images/gallery/img-big-12.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-12.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-12.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
 
           <li class="gallery__item mix french">
             <a class="gallery__link" href="images/gallery/img-big-13.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-13.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-13.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix french">
             <a class="gallery__link" href="images/gallery/img-big-14.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-14.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-14.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix american">
             <a class="gallery__link" href="images/gallery/img-big-15.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-15.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-15.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>
           <li class="gallery__item mix french">
             <a class="gallery__link" href="images/gallery/img-big-16.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/img-big-16.jpg" width="270" height="200"
+              <img class="gallery__img" src="images/gallery/mini/img-small-16.jpg" width="270" height="200"
                 alt="French dog wear a sweater">
             </a>
           </li>

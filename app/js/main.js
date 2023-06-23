@@ -77,7 +77,10 @@ $(function () {
 
   // show more
 
-  const btnShow = document.querySelector('#show');
+
+  $(function () {
+  if (window.location.pathname === '/show.html') {
+    const btnShow = document.querySelector('#show');
   const cardShow = document.querySelector('[data-show]');
       
     btnShow.addEventListener('click', function() {
@@ -95,6 +98,28 @@ $(function () {
       }
 
     });
+  }
+
+});
+
+  // const btnShow = document.querySelector('#show');
+  // const cardShow = document.querySelector('[data-show]');
+      
+  //   btnShow.addEventListener('click', function() {
+     
+  //     if (
+  //       cardShow.classList.toggle('hidden')
+
+        
+  //     ) {
+
+  //       btnShow.textContent = "Show more";
+
+  //     } else {
+  //       btnShow.textContent = "Show Less";
+  //     }
+
+  //   });
 
   // show more end
   

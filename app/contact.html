@@ -18,7 +18,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header header--index">
     <div class="container">
       <div class="header__inner">
         <a class="logo focus header__logo" href="#">
@@ -27,30 +27,34 @@
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link focus" href="index.html">
+              <a class="header__link" href="index.html">
                 Home
               </a>
             </li>
 
             <li class=" header__item">
-              <a class="header__link focus" href="#">
-                Blog
-              </a>
-            </li>
-            <li class=" header__item">
-              <a class="header__link" href="#">
+              <a class="header__link" href="show.html">
                 Show&Events
               </a>
             </li>
             <li class=" header__item">
-              <a class="header__link focus  current" href="#">
+              <a class="header__link" href="gallery.html">
+                Gallery
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link" href="blog.html">
+                Blog
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link  current" href="contact.html">
                 Contact us
               </a>
             </li>
-
           </ul>
         </nav>
-        <button class="button button--light focus" type="button" data-modal-button>
+        <button class="btn-secondary" type="button" data-modal-button>
           Sign in
         </button>
 
@@ -155,8 +159,16 @@
                 </ul>
               </div>
             </div>
+
+            <button class="modal__btn" type="button" data-modal-close>
+              <svg class="modal__icon" width="32" height="32">
+                <use href="images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+
           </div>
         </div>
+
 
 
 
@@ -164,13 +176,14 @@
     </div>
   </header>
 
+
   <main>
     <section class="contact section">
       <div class="container contact__container" style="background-image:url(images/contact-bg.png);">
         <div class="contact__content">
-          <h2 class="title contact__title">
+          <h1 class="title contact__title">
             get in touch!
-          </h2>
+          </h1>
           <p class="contact__txt">
             Contact us and ask whatever you want
           </p>
