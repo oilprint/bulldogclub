@@ -32,10 +32,11 @@
   }
 
   &__list {
-   max-height: 100%;
-   
+    max-height: auto;
+    transition: all 0.4s;
+
     &.hidden {
-     max-height: 0;
+      max-height: 0;
     }
   }
 
@@ -79,15 +80,18 @@
     justify-content: center;
     font-size: 22px;
     flex-grow: 1;
-    padding: 35px;
+    padding: 10px;
   }
 
-  &__city {
+  &__place {
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    text-align: left;
+    justify-content: flex-start;
     align-items: center;
     background-color: $bg-light;
     width: 200px;
+    font-size: 17px;
   }
 
   &__button {
