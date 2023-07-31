@@ -1,0 +1,56 @@
+.category {
+  background: linear-gradient(140deg, #DBF0EC, #F1F6F5, #F3F7EF);
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: 44px;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding-top: 400px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
+      width: 350px;
+      height: 370px;
+      top: 0;
+      right: 0;
+      transform: translate(50% 50%);
+    }
+
+    &--breed::before {
+      background-image: url(../../images/adv-1.png);
+    }
+
+    &--show::before {
+      background-image: url(../../images/adv-2.png);
+    }
+
+    &--gallery::before {
+      background-image: url(../../images/adv-3.png);
+    }
+  }
+  
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: $secondary;
+  }
+}
