@@ -77,6 +77,24 @@
     display: flex;
     justify-content: space-between;
     margin-right: 8px;
+    border-radius: 4px;
+    transition: outline 0.4s;
+
+    &:focus {
+      outline: solid 1px $accent-dark;
+    }
+
+    &:hover {
+      outline: solid 1px $grey;
+
+      .latest-post__title {
+        color: $accent;
+      }
+    }
+
+    &:active {
+      outline: solid 1px $accent;
+    }
   }
 
   &__img {
@@ -282,7 +300,7 @@
 
   p {
     margin-bottom: 10px;
-   
+
   }
 
   blockquote {
@@ -295,17 +313,17 @@
     margin: 50px auto;
   }
 
-   &__img-right {
-     float: right;
-     border-radius: 24px;
-     margin: 0 0 20px 30px;
-   }
+  &__img-right {
+    float: right;
+    border-radius: 24px;
+    margin: 0 0 20px 30px;
+  }
 
-   &__img-left {
-     float: left;
-     border-radius: 24px;
-     margin: 0 30px 20px 0;
-   }
+  &__img-left {
+    float: left;
+    border-radius: 24px;
+    margin: 0 30px 20px 0;
+  }
 
   &__data {
     margin-bottom: 20px;
