@@ -78,29 +78,9 @@ $(function () {
   // show more
 
 
-  $(function () {
-  if (window.location.pathname === '/show.html') {
-    const btnShow = document.querySelector('#show');
-  const cardShow = document.querySelector('[data-show]');
-      
-    btnShow.addEventListener('click', function() {
-     
-      if (
-        cardShow.classList.toggle('hidden')
+  
 
-        
-      ) {
 
-        btnShow.textContent = "Show more";
-
-      } else {
-        btnShow.textContent = "Show Less";
-      }
-
-    });
-  }
-
-});
 
   // const btnShow = document.querySelector('#show');
   // const cardShow = document.querySelector('[data-show]');
@@ -129,6 +109,26 @@ $(function () {
 $(function () {
   if (window.location.pathname === '/gallery.html') {
     var mixer = mixitup('.gallery__list');
+  };
+
+  if (window.location.pathname === '/show.html') {
+    const btnShow = document.querySelector('#show');
+  const cardShow = document.querySelector('[data-show]');
+      
+    btnShow.addEventListener('click', function() {
+     
+      if (
+        cardShow.classList.toggle('hidden')
+
+      ) {
+
+        btnShow.textContent = "Show more";
+
+      } else {
+        btnShow.textContent = "Show Less";
+      }
+
+    });
   }
 
 });
