@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulldog Club | Home Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header header--index">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo focus header__logo" href="#">
+          <img class="logo__img" src="images/logo.jpg" width="104" height="86" alt="Logo Bulldog Club">
+        </a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link current" href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li class=" header__item">
+              <a class="header__link" href="show.html">
+                Show&Events
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link" href="gallery.html">
+                Gallery
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link" href="blog.html">
+                Blog
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link" href="contact.html">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-secondary" type="button" data-modal-button>
+          Sign in
+        </button>
+
+        <div class="backdrop hidden" data-modal>
+          <div class="modal">
+            <div class="modal__top">
+
+              <button class="modal__tab active" type="button" data-tab="tab-1">
+                Register
+              </button>
+              <button class="modal__tab" type="button" data-tab="tab-2">
+                Login
+              </button>
+            </div>
+
+            <div class="modal__content">
+
+              <div class="modal__item" data-tab-content id="tab-1">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="modal__item  hidden" data-tab-content id="tab-2">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <label class="form__label ">
+                    <input class="form__checkbox" type="checkbox">
+                    Remember me?
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                  <a class="form__link" href="#">
+                    Forgot Password?
+                  </a>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button class="modal__btn" type="button" data-modal-close>
+              <svg class="modal__icon" width="32" height="32">
+                <use href="images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <h1 class="title hero__title">
+              The club for you and your
+              best friend
+            </h1>
+            <p class="hero__txt">
+              The Bulldog Club offers people an opportunity to meet like-minded people and bond with their dog
+            </p>
+            <button class="button" type="button" data-modal-button>
+              Join Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section">
+      <div class="about__container">
+        <div class="about__inner">
+          <div class="about__photos">
+            <div class="about__column-1">
+              <img class="about__img about__img--top" src="images/photo-1.jpg" width="250" height="290"
+                alt="Our member">
+              <img class="about__img" src="images/photo-2.jpg" width="250" height="200" alt="Our member">
+            </div>
+            <div class="about__column-2">
+              <img class="about__img about__img--top" src="images/photo-3.jpg" width="330" height="230"
+                alt="Our member">
+              <img class="about__img" src="images/photo-4.jpg" width="330" height="260" alt="Our member">
+            </div>
+          </div>
+          <div class="about__content">
+            <h2 class="title about__title">
+              About Us
+            </h2>
+            <div class="about__info">
+              <p class="about__txt">
+                The Bulldog Club of Kentucky is a non-profit organization whose members range from professional Bulldog
+                breeders, people who compete at dog shows, owners of pet Bulldogs, and people who just love the breed.
+              </p>
+              <p class="about__txt">
+                Our goal is to enhance the breed by promoting initiatives that focus on breeding dogs that are healthy
+                and have sound physical attributes, aligning with the standards set for the breed's excellence.
+              </p>
+            </div>
+            <button class="btn-secondary" type="button" data-modal-button>
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="category section">
+      <div class="container">
+        <h2 class="sr-only">
+          Our services
+        </h2>
+        <ul class="category__list">
+          <li class="category__item">
+            <a class="category__link category__link--breed" href="blog-one.html">
+              <h3 class="category__title">
+                Breed info
+              </h3>
+            </a>
+          </li>
+          <li class="category__item">
+            <a class="category__link category__link--show" href="show.html">
+              <h3 class="category__title">
+                Show&Events
+              </h3>
+            </a>
+          </li>
+          <li class="category__item">
+            <a class="category__link category__link--gallery" href="gallery.html">
+              <h3 class="category__title">
+                Our dogs
+              </h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="info section">
+      <div class="container">
+        <h2 class="title info__title">
+          Breed info
+        </h2>
+        <ul class="info__row">
+          <li class="info__item">
+            <article class="blog-card">
+              <a class="blog-card__link" href="blog-one.html">
+                <img class="blog-card__img" src="images/articles/blog-01.jpg" width="530" height="330" alt="#">
+                <h3 class="blog-card__title">
+                  Rare and unusual colours
+                </h3>
+                <p class="blog-card__txt">
+                  Before buying a puppy it’s useful to know that every breed of pedigree dog has a list of ideal
+                  recognised colours described in their breed standard (a description and guide to what a breed looks
+                  and acts like).In doing your research to find a puppy, you may have come across adverts for dogs that
+                  have ‘unusual’ colouring. Before deciding to buy one of these ‘rare’ coloured dogs, there are some
+                  things you need to know first.
+                </p>
+              </a>
+            </article>
+          </li>
+          <li class="info__item">
+            <article class="blog-card">
+              <a class="blog-card__link" href="blog-one.html">
+                <img class="blog-card__img" src="images/articles/blog-06.jpg" width="530" height="330" alt="#">
+                <h3 class="blog-card__title">
+                  French Bulldog Breed Information
+                </h3>
+                <p class="blog-card__txt">
+                  The French Bulldog is a companion dog. The breed is small and muscular with heavy bone structure, a
+                  smooth
+                  coat, a short face and trademark "bat" ears. Prized for its affectionate nature and balanced
+                  disposition,
+                  they are generally active and alert, but not unduly boisterous. Frenchies can be brindle, fawn, white,
+                  and
+                  brindle and white.
+                </p>
+              </a>
+            </article>
+          </li>
+          <li class="info__item">
+            <article class="blog-card">
+              <a class="blog-card__link" href="blog-one.html">
+                <img class="blog-card__img" src="images/articles/blog-04.jpg" width="530" height="330" alt="#">
+                <h3 class="blog-card__title">
+                  Fawn French Bulldog
+                </h3>
+                <p class="blog-card__txt">
+                  The Blue Fawn French Bulldog is a rare and unique breed of French Bulldog. This is a purebred dog
+                  named
+                  for their distinctive color. If you’re looking for more information on the Blue Fawn Frenchie, you’ve
+                  come to the right place. Here’s all the information that you need to know about this rare dog breed.
+                </p>
+              </a>
+            </article>
+          </li>
+        </ul>
+
+        <ul class="info__row">
+          <li class="info__item">
+            <article class="blog-card">
+              <a class="blog-card_link" href="blog-one.html">
+                <img class="blog-card__img" src="images/articles/blog-03.jpg" width="530" height="330" alt="#">
+                <h3 class="blog-card__title">
+                  English Bulldog Breed Guide: Characteristics, History & Care
+                </h3>
+                <p class="blog-card__txt">
+                  English Bulldog pictures quickly reveal a distinctive look. They have small, thin ears located at the
+                  back of the head, as well as deep folds of loose skin that start on the forehead and extend down to
+                  the
+                  jowl. Their anatomy is classified as brachycephalic, with eyes set wide above a short muzzle that
+                  features a broad, black nose, hanging upper lips, and a strongly undershot lower jaw.
+                </p>
+              </a>
+            </article>
+
+          </li>
+          <li class="info__item">
+            <article class="blog-card">
+              <a class="blog-card__link" href="blog-one.html">
+                <img class="blog-card__img" src="images/articles/blog-02.jpg" width="530" height="330" alt="#">
+                <h3 class="blog-card__title">
+                  American Bulldog: Breed Overview
+                </h3>
+                <p class="blog-card__txt">
+                  Bulldogs are some of the most popular dogs around the globe. One of their bigger varieties is the
+                  American Bulldog. The American Bulldog is a highly affectionate, gentle, and loving dog that many
+                  people
+                  can’t get enough of. These gentle giants are a favorite among families and those in need of a work
+                  dog.
+                </p>
+              </a>
+            </article>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="adv section" style="background-image: url(images/adv.jpg);">
+      <div class="container">
+        <div class="adv__inner" style="background-image: url(images/adv-bg.png);">
+          <div class="adv__content">
+            <h2 class="title adv__title">
+              Join our Team
+            </h2>
+            <p class="adv adv__txt">
+              When you join our club, you'll get an exciting year full of canine adventures, helping you to learn new
+              skills, build confidence and make new friends through our programme of dog activities across the World.
+            </p>
+            <ul class="adv adv__list">
+              <li class="adv adv__item">
+                Showing
+              </li>
+              <li class="adv adv__item">
+                Training
+              </li>
+              <li class="adv adv__item">
+                Media center
+              </li>
+              <li class="adv adv__item">
+                Help center
+              </li>
+            </ul>
+            <button class="button" type="button" data-modal-button>
+              Join us
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news section">
+      <div class="container">
+
+        <div class="swiper">
+          <div class="swiper__top">
+            <h2 class="title">
+              Useful resources
+            </h2>
+            <div class="swiper__buttons">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <article class="blog-card blog-card--small">
+                <a class="blog-card__link" href="blog-one.html">
+                  <img class="blog-card__img" src="images/articles/blog-8.jpg" width="530" height="330" alt="#">
+                  <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
+                  <h3 class="blog-card__title">
+                    Health and Care A to Z
+                  </h3>
+                  <p class="blog-card__txt">
+                    TDiscover our comprehensive A to Z guide covering various common health issues that dogs may
+                    encounter throughout their lives. Within this resource, you will find a plethora of informative
+                    articles addressing a wide range of health and well-being topics relevant to your canine companion.
+                  </p>
+                </a>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="blog-card blog-card--small">
+                <a class="blog-card__link" href="#">
+                  <img class="blog-card__img" src="images/articles/blog-6.jpg" width="530" height="330" alt="#">
+                  <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
+                  <h3 class="blog-card__title">
+                    Health and welfare at dog shows
+                  </h3>
+                  <p class="blog-card__txt">
+                    Explore our efforts to enhance the methods of monitoring and preserving the health of show dogs.
+                    Delve into the initiatives and measures we are undertaking to improve the overall well-being and
+                    medical supervision of dogs participating in shows.
+                  </p>
+                </a>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="blog-card blog-card--small">
+                <a class="blog-card__link" href="#">
+                  <img class="blog-card__img" src="images/articles/blog-7.jpg" width="530" height="330" alt="#">
+                  <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
+                  <h3 class="blog-card__title">
+                    6 Tips for Keeping Your Dog Healthy
+                  </h3>
+                  <p class="blog-card__txt">
+                    In addition to showering your beloved pup with ample love and care, our veterinarians in Rainbow
+                    City have shared six valuable tips on how you can actively contribute to maintaining your dog's
+                    well-being. By following these guidelines, you can play a crucial role in promoting the health and
+                    vitality of your furry companion.
+                    eed to know about this rare dog breed.
+                  </p>
+                </a>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="blog-card blog-card--small">
+                <a class="blog-card__link" href="#">
+                  <img class="blog-card__img" src="images/articles/blog-10.jpg" width="530" height="330" alt="#">
+                  <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
+                  <h3 class="blog-card__title">
+                    What we do for dog health
+                  </h3>
+                  <p class="blog-card__txt">
+                    Our mission is to enhance the well-being of dogs, both in the present and in the long run. We
+                    achieve this by conducting research, fostering collaborations, providing valuable resources, and
+                    implementing health schemes. Through these efforts, we aim to make a positive impact on the lives of
+                    dogs, ensuring a brighter future for them.
+                  </p>
+                </a>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="blog-card blog-card--small">
+                <a class="blog-card__link" href="#">
+                  <img class="blog-card__img" src="images/articles/blog-2.jpg" width="530" height="330" alt="#">
+                  <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
+                  <h3 class="blog-card__title">
+                    Change of ownership
+                  </h3>
+                  <p class="blog-card__txt">
+                    Discover additional information on the process of updating the registered ownership of your newly
+                    acquired dog with The Club. Expand your knowledge on the necessary steps and requirements involved
+                    in
+                    changing the ownership details for your beloved canine companion.
+                  </p>
+                </a>
+              </article>
+            </div>
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <a class="logo footer__logo" href="#">
+          <img class="footer__img " src="images/logo-white.jpg" width="200" height="166" alt="Logo Bulldog Club">
+        </a>
+        <div class="footer__links">
+          <p class="footer__subtitle">
+            Navigate
+          </p>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link current" href="#">
+                Home
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Breed Info
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Show&Events
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Contact us
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <address class="footer__contacts">
+          <p class="footer__subtitle">
+            Contact us
+          </p>
+          <div class="footer__address">
+            4517 Washington Ave, Manchester Kentucky 39495
+          </div>
+          <a class="footer__phone" href="tel:+16065550123">
+            (606) 555-0123
+          </a>
+          <a class="footer__mail" href="mailto:georgia.young@example.com">
+            <svg class="footer__icon" width="20" height="20">
+              <use href="images/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            georgia.young@example.com
+          </a>
+        </address>
+
+        <div class="footer__social">
+          <p class="footer__subtitle">
+            Join us
+          </p>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="images/symbol-defs.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="images/symbol-defs.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src=" js/main.min.js"> </script>
+</body>
+
+</html>
