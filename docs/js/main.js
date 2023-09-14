@@ -108,5 +108,4 @@ $(function () {
   if (window.location.pathname === '/gallery.html') {
     var mixer = mixitup('.gallery__list');
   };
-
 });
