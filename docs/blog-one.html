@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulldog Club | Blog | Articles </title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header header--index">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo focus header__logo" href="#">
+          <img class="logo__img" src="images/logo.jpg" width="104" height="86" alt="Logo Bulldog Club">
+        </a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li class=" header__item">
+              <a class="header__link" href="show.html">
+                Show&Events
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link" href="gallery.html">
+                Gallery
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link  current" href="blog.html">
+                Blog
+              </a>
+            </li>
+            <li class=" header__item">
+              <a class="header__link" href="contact.html">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-secondary" type="button" data-modal-button>
+          Sign in
+        </button>
+
+        <div class="backdrop hidden" data-modal>
+          <div class="modal">
+            <div class="modal__top">
+
+              <button class="modal__tab active" type="button" data-tab="tab-1">
+                Register
+              </button>
+              <button class="modal__tab" type="button" data-tab="tab-2">
+                Login
+              </button>
+            </div>
+
+            <div class="modal__content">
+
+              <div class="modal__item" data-tab-content id="tab-1">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="modal__item  hidden" data-tab-content id="tab-2">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <label class="form__label ">
+                    <input class="form__checkbox" type="checkbox">
+                    Remember me?
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                  <a class="form__link" href="#">
+                    Forgot Password?
+                  </a>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button class="modal__btn" type="button" data-modal-close>
+              <svg class="modal__icon" width="32" height="32">
+                <use href="images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </header>
+
+
+  <div class="blog-one container">
+    <div class="blog-one__wrapper">
+
+      <main class="blog-one__content">
+        <div class="breadcrumbs blog-one__breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">
+                Home
+              </a>
+            </li>
+
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">
+                Blog
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">
+                Blog-one
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class=" blog-one__inner">
+
+          <img class="blog-one__img" src="images/articles/blog-3.jpg" alt="" width="770" height="400">
+
+          <div class="blog-one__txt">
+            <h1>
+              Rare and unusual colours
+            </h1>
+            <div class="data blog-one__data">
+              Jun 05 2022
+            </div>
+            <p>
+              Before buying a puppy it’s useful to know that every breed of pedigree dog has a list of ideal recognised
+              colours
+              described in their breed standard (a description and guide to what a breed looks and acts like).In doing
+              your research
+              to find a puppy, you may have come across adverts for dogs that have ‘unusual’ colouring. Before deciding
+              to
+              buy one of
+              these ‘rare’ coloured dogs, there are some things you need to know first.
+            </p>
+            <blockquote>
+              WARNING - French Bulldogs should NOT be Blue, Lilac, Chocolate, Black & Tan , Merle, or any colour or
+              pattern other than
+              the colours recognised in the Kennel Club Breed Standard Please do not buy a French Bulldog puppy in any
+              of
+              these so
+              called rare fashion colours.
+            </blockquote>
+            <h2>
+              Are they truly rare?
+            </h2>
+            <img class="blog-one__img-right" src="images/articles/blog-one-1.jpg" width="230" height="230"
+              alt="Dog with rare color">
+            <p>
+              No, despite what a breeder might claim, the rarity of these colors simply means that breeders choose to
+              prioritize
+              breeding dogs based on their color, often at the expense of other qualities like health or temperament. In
+              fact, some
+              of these so-called "rare" colors are actually quite common. The term "rare" is merely a marketing tactic
+              used to create
+              a perception of uniqueness for these dogs.
+            </p>
+            <p>
+              It is most essential to buy a HEALTHY PUPPY who has been reared and socialised correctly and is the right
+              breed of dog for you and your circumstances than to buy a puppy because it is a fashionable breed or
+              colour.
+              PLEASE NOTE The recognised genuine colours for the French Bulldog are PIED, BRINDLE, & FAWN. If a
+              Frenchies
+              coat colour is anything other than the colours given in the Kennel Club Breed Standard then it has an
+              undesirable coat colour which is not recognised as typical of this breed. WARNING - French Bulldogs should
+              NOT be Blue, Lilac, Chocolate, Black & Tan , Merle, or any colour or pattern other than the colours
+              recognised in the Kennel Club Breed Standard Please do not buy a French Bulldog puppy in any of these so
+              called rare fashion colours. They are not rare , they are undesirable and not typical of the breed.
+            </p>
+            <h2>
+              Your puppy's health and happiness
+            </h2>
+            <p>
+              Both the mother and father (dam and sire) of your puppy should undergo health screenings for the same
+              conditions as other dogs in the breed. Their overall health and temperament should always take precedence
+              over their color. You can find the recommended health screening guidelines for each breed in our Breeds
+              A-Z
+              database. Remain vigilant and do thorough research!
+            </p>
+            <img class="blog-one__img-left" src="images/articles/blog-one-2.jpg" width="150" height="150"
+              alt="Puppy on the hands">
+
+            <p>
+              Be sure to do your research before you buy a puppy. To find out more about a breed, or about unusual
+              colours, speak to your local breed club or refer to our Breeds A to Z.
+
+              Never buy from anyone you think hasn’t taken every step to make a puppy’s health their priority. If you
+              suspect someone is a puppy ‘farmer’ (someone breeding dogs in poor conditions with no thought for their
+              care
+              or welfare), then please report them to the RSPCA, the police or your local authority who are responsible
+              for licensing breeders.
+            </p>
+            <h2>
+              Kennel Club registration and colors
+            </h2>
+            <p>
+              When registering a puppy with The Kennel Club, the dog's color must be specified. Breed standard colors:
+              Each breed has a set of colors that are considered acceptable within the breed and confirmed in the breed
+              standards. Non-breed standard colors: Dogs may also be registered with non-breed-standard colors, which
+              means the color can occur in the breed but doesn't meet the criteria set by the breed standard. Unexpected
+              colors: If a dog's color doesn't match either the breed standard or a non-breed-standard color, it may
+              suggest that the color originated from another breed during a crossbreeding at some point in the dog's
+              ancestry. This raises the possibility that if you're purchasing a dog with an unexpected color, you might
+              not be getting wha t you believe you'r e paying for.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <aside class="sidebar">
+
+        <div class="filter-search sidebar__filter">
+          <h3 class="sidebar__title">
+            Search
+          </h3>
+          <form action="#" class="form-search">
+            <input class="form-search__input" type="text" placeholder="Search">
+            <button class="form-search__button">
+              <svg class="form-search__icon" width="24" height="24">
+                <use href="images/symbol-defs.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="latest-post">
+          <h3 class="sidebar__title">
+            Latest post
+          </h3>
+          <ul class="latest-post__list">
+
+            <li class="latest-post__item">
+              <a href="#" class="latest-post__link">
+                <img class="latest-post__img" src="images/articles/mini/mini-1.jpg" width="80" height="80" alt="">
+                <div class="latest-post__content">
+                  <h4 class="latest-post__title">
+                    How to introduce your pup to visitors: 6 simple steps
+                  </h4>
+                  <div class="data">Jun 25 2022</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="latest-post__item">
+              <a href="#" class="latest-post__link">
+                <img class="latest-post__img" src="images/articles/mini/mini-2.jpg" width="80" height="80" alt="">
+                <div class="latest-post__content">
+                  <h4 class="latest-post__title">
+                    Change of ownership
+                  </h4>
+                  <div class="data">Jun 05 2022</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="latest-post__item">
+              <a href="#" class="latest-post__link">
+                <img class="latest-post__img" src="images/articles/mini/mini-3.jpg" width="80" height="80" alt="">
+                <div class="latest-post__content">
+                  <h4 class="latest-post__title">
+                    Health & health screening
+                  </h4>
+                  <div class="data">Apr 22 2022</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="latest-post__item">
+              <a href="#" class="latest-post__link">
+                <img class="latest-post__img" src="images/articles/mini/mini-4.jpg" width="80" height="80" alt="">
+                <div class="latest-post__content">
+                  <h4 class="latest-post__title">
+                    Find an assured breeder
+                  </h4>
+                  <div class="data">Apr 10 2022</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar__filter filter-category">
+          <h3 class="sidebar__title filter-category__title">
+            Categoty
+          </h3>
+          <form action="#" class="filter-category__form">
+            <label class="filter-category__label">
+              <input class="filter-category__checkbox" type="checkbox">
+              <span class="filter-category__checkbox-custom">
+                <span class="filter-category__txt">
+                  Breed Info
+                </span>
+                <span class="filter-category__number">
+                  15
+                </span>
+              </span>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__checkbox" type="checkbox">
+              <span class="filter-category__checkbox-custom">
+                <span class="filter-category__txt">
+                  New puppy
+                </span>
+                <span class="filter-category__number">
+                  15
+                </span>
+              </span>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__checkbox" type="checkbox" checked>
+              <span class="filter-category__checkbox-custom">
+                <span class="filter-category__txt">
+                  Health care
+                </span>
+                <span class="filter-category__number">
+                  15
+                </span>
+              </span>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__checkbox" type="checkbox">
+              <span class="filter-category__checkbox-custom">
+                <span class="filter-category__txt">
+                  Dog training
+                </span>
+                <span class="filter-category__number">
+                  15
+                </span>
+              </span>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__checkbox" type="checkbox">
+              <span class="filter-category__checkbox-custom">
+                <span class="filter-category__txt">
+                  Dog activities
+                </span>
+                <span class="filter-category__number">
+                  15
+                </span>
+              </span>
+            </label>
+
+          </form>
+        </div>
+
+        <div class="filter-tag">
+          <h3 class="sidebar__title">
+            filter-tag
+          </h3>
+
+          <form class="filter-tag__form" action="#">
+            <label class="filter-tag__label">
+              <input class="filter-tag__checkbox" type="checkbox">
+              <span class="filter-tag__checkbox-custom">
+                Breed
+              </span>
+            </label>
+
+
+            <label class="filter-tag__label">
+              <input class="filter-tag__checkbox" type="checkbox">
+              <span class="filter-tag__checkbox-custom">
+                Activities
+              </span>
+            </label>
+
+
+            <label class="filter-tag__label">
+              <input class="filter-tag__checkbox" type="checkbox">
+              <span class="filter-tag__checkbox-custom">
+                Dog care
+              </span>
+            </label>
+
+
+            <label class="filter-tag__label">
+              <input class="filter-tag__checkbox" type="checkbox">
+              <span class="filter-tag__checkbox-custom">
+                Puppy
+              </span>
+            </label>
+
+
+            <label class="filter-tag__label">
+              <input class="filter-tag__checkbox" type="checkbox">
+              <span class="filter-tag__checkbox-custom">
+                New dog
+              </span>
+            </label>
+
+
+            <label class="filter-tag__label">
+              <input class="filter-tag__checkbox" type="checkbox">
+              <span class="filter-tag__checkbox-custom">
+                buying
+              </span>
+            </label>
+          </form>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <a class="logo footer__logo" href="#">
+          <img class="footer__img " src="images/logo-white.jpg" width="200" height="166" alt="Logo Bulldog Club">
+        </a>
+        <div class="footer__links">
+          <p class="footer__subtitle">
+            Navigate
+          </p>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link current" href="#">
+                Home
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Breed Info
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Show&Events
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Contact us
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <address class="footer__contacts">
+          <p class="footer__subtitle">
+            Contact us
+          </p>
+          <div class="footer__address">
+            4517 Washington Ave, Manchester Kentucky 39495
+          </div>
+          <a class="footer__phone" href="tel:+16065550123">
+            (606) 555-0123
+          </a>
+          <a class="footer__mail" href="mailto:georgia.young@example.com">
+            <svg class="footer__icon" width="20" height="20">
+              <use href="images/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            georgia.young@example.com
+          </a>
+        </address>
+
+        <div class="footer__social">
+          <p class="footer__subtitle">
+            Join us
+          </p>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="images/symbol-defs.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="images/symbol-defs.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src=" js/main.min.js"> </script>
+</body>
+
+</html>

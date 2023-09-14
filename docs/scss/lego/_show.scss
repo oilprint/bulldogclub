@@ -1,0 +1,100 @@
+.calendar {
+  text-align: center;
+
+  &__section {
+    padding-top: 0;
+  }
+
+  &__title {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    max-width: 700px;
+    width: 100%;
+    font-size: 20px;
+    color: $grey-dark;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    max-height: 100%;
+    border-bottom: 1px solid $grey-light;
+    overflow: hidden;
+    border-radius: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    max-height: auto;
+    transition: all 0.4s;
+
+    &.hidden {
+      max-height: 0;
+    }
+  }
+
+  &__item {
+    border-top: 1px solid $grey-light;
+  }
+
+  &__link {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+  }
+
+  &__data {
+    max-width: 160px;
+    width: 100%;
+    background-color: $bg-light;
+    padding: 20px 15px;
+    color: $secondary;
+    font-family: 'Bebas Neue',
+      sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__day {
+    display: block;
+    color: $grey-dark;
+    font-size: 15px;
+  }
+
+  &__event {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-grow: 1;
+    padding: 10px;
+  }
+
+  &__place {
+    padding: 10px;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $bg-light;
+    width: 200px;
+    font-size: 17px;
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}

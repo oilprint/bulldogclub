@@ -1,0 +1,23 @@
+.info {
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    width: calc((100% - 2 * 30px) / 3);
+    flex-grow: 1;
+    
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
