@@ -36,15 +36,15 @@
     }
 
     &--breed::before {
-      background-image: url(../../images/adv-1.png);
+      background-image: url('../images/adv-1.png');
     }
 
     &--show::before {
-      background-image: url(../../images/adv-2.png);
+      background-image: url('../../images/adv-2.png');
     }
 
     &--gallery::before {
-      background-image: url(../../images/adv-3.png);
+      background-image: url('../../images/adv-3.png');
     }
   }
   
