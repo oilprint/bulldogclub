@@ -51,7 +51,7 @@ $(function () {
   Fancybox.bind('[data-fancybox="gallery"]', {
   });
 
-  
+
 
   //swiper
   const swiper = new Swiper('.swiper', {
@@ -82,7 +82,6 @@ $(function () {
   const cardShow = document.querySelector('[data-show]');
 
   console.log('show');
-  console.log(btnShow);
       
     btnShow.addEventListener('click', function() {
      
@@ -100,12 +99,12 @@ $(function () {
     });
 
   // show more end
+
+   
   
 });
 
 
 $(function () {
-  if (window.location.pathname === '/gallery.html') {
-    var mixer = mixitup('.gallery__list');
-  };
+  var mixer = mixitup('.gallery__list');
 });
