@@ -29,7 +29,7 @@
     content: '';
     width: 16px;
     height: 16px;
-    background-image: url(../../images/icons/calendar.svg);
+    background-image: url('../images/icons/calendar.svg');
     left: 0;
     top: 0px;
     background-repeat: no-repeat;
@@ -310,5 +310,4 @@
   &__data {
     margin-bottom: 20px;
   }
-
 }
