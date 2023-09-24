@@ -9,9 +9,8 @@
   @media (min-width: (1024px)) {
     display: flex;
     align-items: center;
-    height: calc(80vh + 106px);
+    height: calc(70vh + 106px);
     padding: 0;
-
   }
 
   &::after {
@@ -49,7 +48,7 @@
 
       @media (min-width: (1024px)) {
         height: 600px;
-        bottom: -70px;
+        bottom: -80px;
       }
     }
   }
@@ -75,22 +74,22 @@
       font-size: 76px;
     }
 
-    @media (min-width: (578px)) {}
-
-    @media (min-width: (768px)) {}
-
     @media (min-width: (1024px)) {
+      font-size: 86px;
+    }
+
+    @media (min-width: (1200px)) {
       font-size: 96px;
     }
   }
 
   &__txt {
-    font-size: 27px;
+    font-size: 24px;
     margin-bottom: 30px;
 
-
-
-    @media (min-width: (578px)) {}
+    @media (min-width: (578px)) {
+      font-size: 27px;
+    }
 
     @media (min-width: (768px)) {
       margin-bottom: 60px;
