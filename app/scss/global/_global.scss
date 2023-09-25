@@ -37,7 +37,15 @@ main {
 }
 
 .section {
-  padding: 70px 0;
+  padding: 30px 0;
+
+  @media (min-width: (768px)) {
+    padding: 50px 0;
+  }
+
+  @media (min-width: (768px)) {
+    padding: 70px 0;
+  }
 }
 
 .sr-only {
