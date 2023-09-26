@@ -93,18 +93,18 @@
     }
 
     &:focus {
-      outline: solid 1px $accent-dark;
+      outline: solid 1px $secondary;
     }
 
     &:hover {
-      outline: solid 1px $accent-dark;
+      outline: solid 1px $accent;
       .category__title {
         color: $accent;
       }
     }
 
     &:active {
-      background-color: rgba($accent-dark, 0.1)
+      background-color: rgba($secondary, 0.1)
     }
 
   }

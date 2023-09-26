@@ -1,18 +1,35 @@
 .footer {
-  padding: 100px 0;
+  padding: 50px 0 30px;
   background-color: $secondary;
   color: $light;
   line-height: 1.5;
   font-weight: 300;
 
+  @media (min-width: (1024px)) {
+    padding: 70px 0 50px;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    @media (min-width: (768px)) {
+      flex-direction: row;
+    }
   }
 
+
   &__logo {
-    margin-right: 50px;
+    display: block;
     height: fit-content;
+    flex-shrink: 0;
+    margin: 0 auto 40px;
+
+    @media (min-width: (768px)) {
+      margin: 0 30px 40px 0;
+    }
 
     &:focus {
       outline: solid 1px $light;
@@ -21,11 +38,24 @@
     }
   }
 
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    row-gap: 30px;
+
+    @media (min-width: (1024px)) {
+      flex-wrap: nowrap;
+      max-width: 1000px;
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+
   &__links {
     max-width: 200px;
     width: 100%;
     text-transform: uppercase;
-    margin-right: 50px;
   }
 
   &__item:not(:last-child) {
@@ -55,7 +85,6 @@
   &__contacts {
     max-width: 320px;
     width: 100%;
-    margin-right: 50px;
     margin-bottom: 10px;
   }
 
@@ -110,6 +139,7 @@
 
     &:hover {
       color: $dark;
+
       .footer__icon {
         fill: $dark;
       }
@@ -129,6 +159,28 @@
   &__social {
     max-width: 200px;
     width: 100%;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    color: rgba($accent-light, 0.3);
+    font-size: 16px;
+
+    @media (min-width: (578px)) {
+      flex-direction: row;
+    }
+  }
+
+  &__bottom-item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+      @media (min-width: (578px)) {
+        margin-bottom: 0;
+      }
+    }
   }
 
 }
