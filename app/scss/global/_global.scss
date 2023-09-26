@@ -30,10 +30,14 @@ main {
 }
 
 .title {
+  font-size: 64px;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 84px;
   line-height: 1;
   color: $secondary;
+
+  @media (min-width: (576px)) {
+    font-size: 84px;
+  }
 }
 
 .section {
@@ -123,14 +127,20 @@ main {
     object-fit: cover;
     margin-bottom: 20px;
     border-radius: 24px;
+    height: auto;
   }
 
   &__title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     color: $secondary;
     margin-bottom: 8px;
-    min-height: 2.6em;
+    
+
+    @media (min-width: (576px)) {
+      font-size: 28px;
+      min-height: 2.6em;
+    }
   }
 
   &__txt {

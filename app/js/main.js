@@ -55,7 +55,7 @@ $(function () {
 
   //swiper
   const swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30, 
 
     pagination: {
@@ -68,6 +68,20 @@ $(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
+    breakpoints: {
+    
+    568: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }    
+  }  
+
   });
 
   //swiper end
