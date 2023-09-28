@@ -27,6 +27,14 @@
       <a class="logo focus header__logo" href="#">
         <img class="logo__img" src="./images/logo-primary.svg" width="104" height="86" alt="Logo Bulldog Club">
       </a>
+
+      <button class="header__burger" type="button">
+        <span class=" sr-only">Open menu</span>
+        <svg class="header__burger-icon" width="44" height="44">
+          <use href="./images/symbol-defs.svg#icon-burger-open"></use>
+        </svg>
+      </button>
+
       <nav class="header__menu">
         <ul class="header__list">
           <li class="header__item">
@@ -57,7 +65,8 @@
           </li>
         </ul>
       </nav>
-      <button class="btn-secondary" type="button" data-modal-button>
+
+      <button class="header__btn btn-secondary" type="button" data-modal-button>
         Sign in
       </button>
 
@@ -168,10 +177,79 @@
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
-
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="mobile-menu">
+
+    <div class="mobile-menu__top">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link  @@home" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@show" href="works.html">
+            Show&Events
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@gallery" href="#">
+            Gallery
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link current" href="#">
+            Blog
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@contact" href="#">
+            Contact us
+          </a>
+        </li>
+
+      </ul>
+
+      <button class="mobile-menu__btn btn-secondary" type="button">
+        Sign in
+      </button>
+
+    </div>
+
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-inst"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button class="mobile-menu__button" type="button">
+      <span class=" sr-only">Close menu</span>
+      <svg class="mobile-menu__icon" width="44" height="44">
+        <use href="./images/symbol-defs.svg#icon-burger-close"></use>
+      </svg>
+    </button>
   </div>
 </header>
 

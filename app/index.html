@@ -21,7 +21,237 @@
 
 <body>
 
-  
+ <header class="header header--index">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo focus header__logo" href="#">
+        <img class="logo__img" src="./images/logo-primary.svg" width="104" height="86" alt="Logo Bulldog Club">
+      </a>
+
+      <button class="header__burger" type="button">
+        <span class=" sr-only">Open menu</span>
+        <svg class="header__burger-icon" width="44" height="44">
+          <use href="./images/symbol-defs.svg#icon-burger-open"></use>
+        </svg>
+      </button>
+
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link current" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class=" header__item">
+            <a class="header__link @@show" href="show.html">
+              Show&Events
+            </a>
+          </li>
+          <li class=" header__item">
+            <a class="header__link @@gallery" href="gallery.html">
+              Gallery
+            </a>
+          </li>
+          <li class=" header__item">
+            <a class="header__link @@blog" href="blog.html">
+              Blog
+            </a>
+          </li>
+          <li class=" header__item">
+            <a class="header__link @@contact" href="contact.html">
+              Contact us
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__btn btn-secondary" type="button" data-modal-button>
+        Sign in
+      </button>
+
+      <div class="backdrop hidden" data-modal>
+        <div class="modal">
+          <div class="modal__top">
+
+            <button class="modal__tab active" type="button" data-tab="tab-1">
+              Register
+            </button>
+            <button class="modal__tab" type="button" data-tab="tab-2">
+              Login
+            </button>
+          </div>
+
+          <div class="modal__content">
+
+            <div class="modal__item" data-tab-content id="tab-1">
+              <form class="form modal__form" action="#">
+                <label class="form__label ">
+                  E-mail address*
+                  <input class="form__input" type="text" required>
+                </label>
+                <label class="form__label">
+                  Password*
+                  <input class="form__input" type="password" required>
+                </label>
+                <button class="button form__button" type="submit">
+                  Sing Up
+                </button>
+              </form>
+
+              <ul class="social modal__social">
+                <li class="social__item">
+                  <a class="social__link social__link--dark" href="#">
+                    <svg class="social__icon" width="30" height="30">
+                      <use href="./images/symbol-defs.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--dark" href="#">
+                    <svg class="social__icon" width="30" height="30">
+                      <use href="./images/symbol-defs.svg#icon-inst"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--dark" href="#">
+                    <svg class="social__icon social__icon--dark" width="30" height="30">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="modal__item  hidden" data-tab-content id="tab-2">
+              <form class="form modal__form" action="#">
+                <label class="form__label ">
+                  E-mail address*
+                  <input class="form__input" type="text" required>
+                </label>
+                <label class="form__label">
+                  Password*
+                  <input class="form__input" type="password" required>
+                </label>
+                <label class="form__label ">
+                  <input class="form__checkbox" type="checkbox">
+                  Remember me?
+                </label>
+                <button class="button form__button" type="submit">
+                  Sing Up
+                </button>
+                <a class="form__link" href="#">
+                  Forgot Password?
+                </a>
+              </form>
+
+              <ul class="social modal__social">
+                <li class="social__item">
+                  <a class="social__link social__link--dark" href="#">
+                    <svg class="social__icon" width="30" height="30">
+                      <use href="./images/symbol-defs.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--dark" href="#">
+                    <svg class="social__icon" width="30" height="30">
+                      <use href="./images/symbol-defs.svg#icon-inst"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--dark" href="#">
+                    <svg class="social__icon social__icon--dark" width="30" height="30">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="modal__btn" type="button" data-modal-close>
+            <svg class="modal__icon" width="32" height="32">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+
+    <div class="mobile-menu__top">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link  current" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@show" href="works.html">
+            Show&Events
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@gallery" href="#">
+            Gallery
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@blog" href="#">
+            Blog
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@contact" href="#">
+            Contact us
+          </a>
+        </li>
+
+      </ul>
+
+      <button class="mobile-menu__btn btn-secondary" type="button">
+        Sign in
+      </button>
+
+    </div>
+
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-inst"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button class="mobile-menu__button" type="button">
+      <span class=" sr-only">Close menu</span>
+      <svg class="mobile-menu__icon" width="44" height="44">
+        <use href="./images/symbol-defs.svg#icon-burger-close"></use>
+      </svg>
+    </button>
+  </div>
+</header>
 
   <main>
 

@@ -12,6 +12,11 @@ body {
   color: $primary;
   font-style: normal;
   font-weight: 400;
+  overflow-x: hidden;
+
+  &.lock {
+    overflow-y: hidden;
+  }
 }
 
 main {
@@ -97,7 +102,7 @@ main {
     }
 
     &:hover {
-      background-color: $secondary;
+      background-color: $accent;
 
       .social__icon {
         fill: $light;
