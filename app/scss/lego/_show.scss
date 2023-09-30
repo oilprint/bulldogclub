@@ -6,18 +6,27 @@
   }
 
   &__title {
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 10px;
+
+    @media (min-width: (576px)) {
+      font-size: 60px;
+    }
   }
 
   &__subtitle {
     display: inline-block;
     max-width: 700px;
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     color: $grey-dark;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
+    @media (min-width: (576px)) {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
   }
 
   &__wrapper {
@@ -28,7 +37,11 @@
     border-bottom: 1px solid $grey-light;
     overflow: hidden;
     border-radius: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    @media (min-width: (768px)) {
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
@@ -42,21 +55,26 @@
 
   &__item {
     border-top: 1px solid $grey-light;
+    border-bottom: 1px solid $secondary;
+
   }
 
   &__link {
-    max-width: 900px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 22px;
+    flex-direction: column;
+    max-width: 900px;
+    width: 100%;
+
+    @media (min-width: (375px)) {
+      flex-direction: row;
+    }
   }
 
   &__data {
-    max-width: 160px;
     width: 100%;
     background-color: $bg-light;
-    padding: 20px 15px;
+    padding: 10px 15px;
     color: $secondary;
     font-family: 'Bebas Neue',
       sans-serif;
@@ -66,6 +84,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: (375px)) {
+      max-width: 100px;
+    }
+
+    @media (min-width: (578px)) {
+      max-width: 160px;
+      padding: 20px 15px;
+    }
   }
 
   &__day {
@@ -74,24 +101,43 @@
     font-size: 15px;
   }
 
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: (768px)) {
+      flex-direction: row;
+    }
+
+  }
+
   &__event {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    font-size: 18px;
     flex-grow: 1;
     padding: 10px;
+
+    @media (min-width: (576px)) {
+      font-size: 22px;
+    }
   }
 
   &__place {
     padding: 10px;
     display: flex;
-    text-align: left;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: $bg-light;
-    width: 200px;
+    width: 100%;
     font-size: 17px;
+
+    @media (min-width: (768px)) {
+      width: 200px;
+      flex-shrink: 0;
+    }
   }
 
   &__button {

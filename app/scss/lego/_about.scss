@@ -1,6 +1,10 @@
 .about {
   background-color: $light;
 
+  &__section {
+    padding-top: 30px;
+  }
+
   &__container {
     max-width: 1300px;
     width: 100%;
