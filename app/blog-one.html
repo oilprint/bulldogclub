@@ -73,105 +73,108 @@
 
       <div class="backdrop hidden" data-modal>
         <div class="modal">
-          <div class="modal__top">
+          <div class="modal__inner">
+            <div class="modal__top">
 
-            <button class="modal__tab active" type="button" data-tab="tab-1">
-              Register
-            </button>
-            <button class="modal__tab" type="button" data-tab="tab-2">
-              Login
-            </button>
+              <button class="modal__tab active" type="button" data-tab="tab-1">
+                Register
+              </button>
+              <button class="modal__tab" type="button" data-tab="tab-2">
+                Login
+              </button>
+            </div>
+
+            <div class="modal__content">
+
+              <div class="modal__item" data-tab-content id="tab-1">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="modal__item  hidden" data-tab-content id="tab-2">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <label class="form__label ">
+                    <input class="form__checkbox" type="checkbox">
+                    Remember me?
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                  <a class="form__link" href="#">
+                    Forgot Password?
+                  </a>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="modal__content">
-
-            <div class="modal__item" data-tab-content id="tab-1">
-              <form class="form modal__form" action="#">
-                <label class="form__label ">
-                  E-mail address*
-                  <input class="form__input" type="text" required>
-                </label>
-                <label class="form__label">
-                  Password*
-                  <input class="form__input" type="password" required>
-                </label>
-                <button class="button form__button" type="submit">
-                  Sing Up
-                </button>
-              </form>
-
-              <ul class="social modal__social">
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-fb"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-inst"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon social__icon--dark" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-
-            </div>
-            <div class="modal__item  hidden" data-tab-content id="tab-2">
-              <form class="form modal__form" action="#">
-                <label class="form__label ">
-                  E-mail address*
-                  <input class="form__input" type="text" required>
-                </label>
-                <label class="form__label">
-                  Password*
-                  <input class="form__input" type="password" required>
-                </label>
-                <label class="form__label ">
-                  <input class="form__checkbox" type="checkbox">
-                  Remember me?
-                </label>
-                <button class="button form__button" type="submit">
-                  Sing Up
-                </button>
-                <a class="form__link" href="#">
-                  Forgot Password?
-                </a>
-              </form>
-
-              <ul class="social modal__social">
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-fb"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-inst"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon social__icon--dark" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
 
           <button class="modal__btn" type="button" data-modal-close>
             <svg class="modal__icon" width="32" height="32">
@@ -215,7 +218,7 @@
 
       </ul>
 
-      <button class="mobile-menu__btn btn-secondary" type="button">
+      <button class="mobile-menu__btn btn-secondary" type="button" data-modal-button>
         Sign in
       </button>
 

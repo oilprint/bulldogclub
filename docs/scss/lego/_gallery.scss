@@ -1,37 +1,61 @@
 .gallery {
 
   &__section {
-    padding-top: 40px;
+    padding-top: 20px;
+
+    @media (min-width: (578px)) {
+      padding-top: 30px;
+    }
   }
 
   &__title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+
+    @media (min-width: (768px)) {
+      margin-bottom: 30px;
+    }
   }
 
   &__filter {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    align-items: stretch;   
+    gap: 10px;
+    margin-bottom: 10px;
+
+    overflow-x: scroll;
+
+    @media (min-width: (578px)) {
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+   
+
+    @media (min-width: (768px)) {
+      margin-bottom: 30px;
+      justify-content: center;
+    }
   }
 
-  &__filter-item:not(:last-child) {
-    margin-right: 20px;
-  }
+ 
 
   &__button {
+    position: relative;
+    z-index: 2;
     display: block;
     padding: 6px 24px;
+    height: 100%;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: $grey-dark;
     border-radius: 10px;
     border: 1px solid $grey-dark;
-    color: $grey-dark;
-    font-size: 17px;
-    text-transform: capitalize;
-    position: relative;
     overflow: hidden;
-    z-index: 2;
     transition: outline 0.4s, color 0.4s;
+
+    @media (min-width: (768px)) {
+      font-size: 17px;
+    }
 
     &::before {
       position: absolute;
@@ -72,10 +96,20 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-  }
+    gap: 20px;
 
+      }
+      
   &__item {
-    width: calc((100% - 3 * 30px) / 4);
+    width: calc((100% -  20px) / 2);
+
+     @media (min-width: (578px)) {
+width: calc((100% - 2 * 20px) / 3);
+     }
+
+      @media (min-width: (768px)) {
+        width: calc((100% - 3 * 20px) / 4);
+      }
+
   }
 }

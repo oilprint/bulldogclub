@@ -3,8 +3,6 @@ $(function () {
 
    //Mobile Menu
     const burger = document.querySelector('.header__burger');
-
-    console.log('test');
     const mobileMenu = document.querySelector('.mobile-menu'); 
     const closeButton = document.querySelector('.mobile-menu__button');
     const bodyLock = document.querySelector('body'); 

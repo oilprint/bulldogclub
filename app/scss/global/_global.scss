@@ -208,8 +208,17 @@ main {
   }
 
   &__button {
-    width: 100%;
-    margin: 40px 0 20px;
+    display: block;
+    width: fit-content;
+    margin: 10px auto 4px;
+
+    @media (min-width: (375px)) {
+      margin: 20px auto 10px;
+    }
+
+    @media (min-width: (578px)) {
+      margin: 40px auto 20px;
+    }
   }
 
   &__link {
