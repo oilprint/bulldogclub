@@ -9,11 +9,11 @@ Starting from the idea and design, I developed a multi-page website, utilizing F
 My approach ensures optimal website adaptation for mobile devices, providing a pleasant and user-friendly experience.
 
 
-## Skills and Experience
+## Technologies Used:
 
 <table><tr><td valign="top" width="256">  
   
-### Frontend  
+Frontend  
   
 <div align="left">  
 <a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 30px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="30" /></a>  
@@ -22,3 +22,13 @@ My approach ensures optimal website adaptation for mobile devices, providing a p
   <a href="https://jquery.com/" target="_blank"><img style="margin: 30px" src="https://profilinator.rishav.dev/skills-assets/jquery.png" alt="jQuery" height="30" /></a>   
   
 </div>
+
+</td><td valign="top" width="256">
+  
+Design  
+  
+<div align="left">  
+<a href="https://www.figma.com/"  target="_blank"><img style="margin: 30px" src="https://profilinator.rishav.dev/skills-assets/figma-icon.svg" alt="Figma" height="30" /></a>  
+</div>
+<br/>  
+</td></tr></table>  
