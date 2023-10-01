@@ -151,9 +151,13 @@
   }
 
   &__icon {
+    display: none;
     fill: $light;
     margin-right: 8px;
     transition: fills 0.4s;
+    @media (min-width: (375px)) {
+      display: block;
+    }
   }
 
   &__social {
