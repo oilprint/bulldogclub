@@ -3,23 +3,54 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (min-width: (768px)) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 
   &__item {
-    max-width: 350px;
-    width: 100%;
+    width: 320px;
     text-align: center;
 
+    @media (min-width: (768px)) {
+      width: 350px;
+    }
+
     &:not(:last-child) {
-      margin-right: 44px;
+      margin-bottom: 20px;
+
+      @media (min-width: (768px)) {
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
     }
   }
 
   &__link {
     display: block;
-    padding-top: 400px;
+    padding-top: 300px;
     position: relative;
+    border-radius: 40px;
+    transition: outline 0.4s,
+    background-color 0.4s;
+
+    @media (min-width: (768px)) {
+      padding-top: 260px;
+    }
+
+    @media (min-width: (1024px)) {
+      padding-top: 350px;
+    }
+
+    @media (min-width: (1200px)) {
+      padding-top: 400px;
+    }
 
     &::before {
       position: absolute;
@@ -27,12 +58,26 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      
-      width: 350px;
-      height: 370px;
+      width: 280px;
+      height: 296px;
       top: 0;
-      right: 0;
-      transform: translate(50% 50%);
+      right: 50%;
+      transform: translate(50%);
+
+      @media (min-width: (768px)) {
+        width: 230px;
+        height: 243px;
+      }
+
+      @media (min-width: (1024px)) {
+        width: 310px;
+        height: 328px;
+      }
+
+      @media (min-width: (1200px)) {
+        width: 350px;
+        height: 370px;
+      }
     }
 
     &--breed::before {
@@ -46,11 +91,28 @@
     &--gallery::before {
       background-image: url('../images/adv-3.png');
     }
+
+    &:focus {
+      outline: solid 1px $secondary;
+    }
+
+    &:hover {
+      outline: solid 1px $accent;
+      .category__title {
+        color: $accent;
+      }
+    }
+
+    &:active {
+      background-color: rgba($secondary, 0.1)
+    }
+
   }
-  
+
   &__title {
     font-size: 32px;
     font-weight: 600;
     color: $secondary;
+    transition: color 0.4s;
   }
 }

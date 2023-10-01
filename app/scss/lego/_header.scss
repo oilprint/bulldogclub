@@ -1,7 +1,8 @@
 .header {
+  position: relative;
   padding: 10px 0;
   background-color: $light;
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid $bg-light;
 
   &__inner {
     display: flex;
@@ -11,6 +12,22 @@
 
   &__logo {
     mix-blend-mode: multiply;
+  }
+
+  &__burger {
+    display: block;
+
+    @media (min-width: (1024px)) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media (min-width: (1024px)) {
+      display: block;
+    }
   }
 
   &__list {
@@ -32,7 +49,7 @@
     transition: outline 0.4s, color 0.4s;
 
     &::before {
-      content: ""; 
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -43,13 +60,13 @@
       transition: transform 0.4s;
     }
 
-     &.current {
-       color: $secondary;
+    &.current {
+      color: $secondary;
 
-       &::before {
-         transform: scaleX(1);
-       }
-     }
+      &::before {
+        transform: scaleX(1);
+      }
+    }
 
     &:focus {
       outline: solid 1px $secondary;
@@ -78,4 +95,120 @@
     background-color: transparent;
     border-bottom: none;
   }
+
+  &__btn {
+    display: none;
+
+    @media (min-width: (1024px)) {
+      display: block;
+    }
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  z-index: 120;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  padding: 70px 0 30px;
+  background-color: $secondary;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.4s;
+
+   @media (min-width: 568px) and (orientation: landscape) {
+     overflow-y: scroll;
+
+   }
+
+
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+     margin-bottom: 20px;
+    width: 100%;
+
+    @media (min-width: (375px)) {
+      margin-bottom: 50px;
+    }
+
+     @media (min-width: 568px) and (orientation: landscape) {
+      margin-bottom: 0;
+     }
+  }
+
+
+  &__link {
+    display: block;
+    padding: 8px 0;
+    font-size: 32px;
+    text-align: center;
+    color: $light;
+    text-transform: uppercase;
+    transition: background-color 0.4s, color 0.4s;
+
+    @media (min-width: (375px)) {
+      padding: 16px 0;
+    }
+
+
+    &:hover {
+      background-color: $light;
+      color: $secondary;
+    }
+
+    &:active {
+      background-color: $bg-light;
+    }
+
+    &.current {
+      color: $secondary;
+      background-color: $bg-light;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+
+    &:focus {
+      outline: solid 1px $light;
+    }
+
+    &:active {
+      background-color: $bg-light;
+
+      .mobile-menu__icon {
+        fill: $secondary;
+      }
+    }
+  }
+
+  &__icon {
+    fill: $light;
+  }
+
+
 }

@@ -21,12 +21,20 @@
 
 <body>
 
- <header class="header header--index">
+  <header class="header">
   <div class="container">
     <div class="header__inner">
       <a class="logo focus header__logo" href="#">
         <img class="logo__img" src="./images/logo-primary.svg" width="104" height="86" alt="Logo Bulldog Club">
       </a>
+
+      <button class="header__burger" type="button">
+        <span class=" sr-only">Open menu</span>
+        <svg class="header__burger-icon" width="44" height="44">
+          <use href="./images/symbol-defs.svg#icon-burger-open"></use>
+        </svg>
+      </button>
+
       <nav class="header__menu">
         <ul class="header__list">
           <li class="header__item">
@@ -57,135 +65,231 @@
           </li>
         </ul>
       </nav>
-      <button class="btn-secondary" type="button" data-modal-button>
+
+      <button class="header__btn btn-secondary" type="button" data-modal-button>
         Sign in
       </button>
 
       <div class="backdrop hidden" data-modal>
         <div class="modal">
-          <div class="modal__top">
+          <div class="modal__inner">
+            <div class="modal__top">
 
-            <button class="modal__tab active" type="button" data-tab="tab-1">
-              Register
-            </button>
-            <button class="modal__tab" type="button" data-tab="tab-2">
-              Login
-            </button>
+              <button class="modal__tab active" type="button" data-tab="tab-1">
+                Register
+              </button>
+              <button class="modal__tab" type="button" data-tab="tab-2">
+                Login
+              </button>
+            </div>
+
+            <div class="modal__content">
+
+              <div class="modal__item" data-tab-content id="tab-1">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="modal__item  hidden" data-tab-content id="tab-2">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <label class="form__label ">
+                    <input class="form__checkbox" type="checkbox">
+                    Remember me?
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                  <a class="form__link" href="#">
+                    Forgot Password?
+                  </a>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="modal__content">
-
-            <div class="modal__item" data-tab-content id="tab-1">
-              <form class="form modal__form" action="#">
-                <label class="form__label ">
-                  E-mail address*
-                  <input class="form__input" type="text" required>
-                </label>
-                <label class="form__label">
-                  Password*
-                  <input class="form__input" type="password" required>
-                </label>
-                <button class="button form__button" type="submit">
-                  Sing Up
-                </button>
-              </form>
-
-              <ul class="social modal__social">
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-fb"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-inst"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon social__icon--dark" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-
-            </div>
-            <div class="modal__item  hidden" data-tab-content id="tab-2">
-              <form class="form modal__form" action="#">
-                <label class="form__label ">
-                  E-mail address*
-                  <input class="form__input" type="text" required>
-                </label>
-                <label class="form__label">
-                  Password*
-                  <input class="form__input" type="password" required>
-                </label>
-                <label class="form__label ">
-                  <input class="form__checkbox" type="checkbox">
-                  Remember me?
-                </label>
-                <button class="button form__button" type="submit">
-                  Sing Up
-                </button>
-                <a class="form__link" href="#">
-                  Forgot Password?
-                </a>
-              </form>
-
-              <ul class="social modal__social">
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-fb"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-inst"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon social__icon--dark" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
 
           <button class="modal__btn" type="button" data-modal-close>
             <svg class="modal__icon" width="32" height="32">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
-
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="mobile-menu">
+
+    <div class="mobile-menu__top">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link  @@home" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link current" href="show.html">
+            Show&Events
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@gallery" href="gallery.html">
+            Gallery
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@blog" href="blog.html">
+            Blog
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@contact" href="contact.html">
+            Contact us
+          </a>
+        </li>
+
+      </ul>
+
+      <button class="mobile-menu__btn btn-secondary" type="button" data-modal-button>
+        Sign in
+      </button>
+
+    </div>
+
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-inst"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button class="mobile-menu__button" type="button">
+      <span class=" sr-only">Close menu</span>
+      <svg class="mobile-menu__icon" width="44" height="44">
+        <use href="./images/symbol-defs.svg#icon-burger-close"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
 
   <main>
 
-    <section class="about section about--right">
+    <h1 class="sr-only">
+      Shows and Additional Events
+    </h1>
+
+    <section class="about section about__section">
       <div class="about__container">
         <div class="about__inner">
-          <div class="about__content">
+          <div class="about__photos">
+            <div class="about__column">
+              <div class="about__img-box about__img-box--1">
+                <img class="about__img" src="./images/show-01.jpg" width="300" height="290" alt="Our member">
+              </div>
 
-            <h1 class="title about__title">
+              <div class="about__img-box about__img-box--2">
+                <img class="about__img" src="./images/show-02.jpg" width="300" height="200" alt="Our member">
+              </div>
+            </div>
+
+            <div class="about__column about__column--rigth">
+              <div class="about__img-box about__img-box--2">
+                <img class="about__img" src="./images/show-03.jpg" width="300" height="200" alt="Our member">
+              </div>
+              <div class="about__img-box about__img-box--1">
+                <img class="about__img" src="./images/show-04.jpg" width="300" height="290" alt="Our member">
+              </div>
+            </div>
+          </div>
+          <div class="about__content">
+            <h2 class="title about__title">
               Dog Shows
-            </h1>
+            </h2>
             <div class="about__info">
               <p class="about__txt">
                 Formal and Informal Dog Shows Dog shows can be categorized as either formal or informal. Formal shows
@@ -206,25 +310,12 @@
               Read more
             </a>
 
-
-          </div>
-
-          <div class="about__photos">
-            <div class="about__column-1">
-              <img class="about__img about__img--top" src="images/show-01.jpg" width="250" height="290"
-                alt="Our member">
-              <img class="about__img" src="images/show-02.jpg" width="250" height="200" alt="Our member">
-            </div>
-            <div class="about__column-2">
-              <img class="about__img about__img--top" src="images/show-04.jpg" width="330" height="230"
-                alt="Our member">
-              <img class="about__img" src="images/show-03.jpg" width="330" height="260" alt="Our member">
-            </div>
           </div>
         </div>
       </div>
 
     </section>
+
 
     <section class="calendar section calendar__section">
       <div class="container">
@@ -239,7 +330,8 @@
           <ul class="calendar__list">
             <li class="calendar__item">
               <a class="calendar__link"
-                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/">
+                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/"
+                target="_blank">
 
                 <time class="calendar__data" datetime="2023-01-05">
                   Jan 5
@@ -248,17 +340,22 @@
                   </span>
                 </time>
 
-                <p class="calendar__event">
-                  Bulldog Club of Colorado Springs AM
-                </p>
-                <p class="calendar__place">
-                  Colorado Springs, CO 80905
-                </p>
+                <div class="calendar__info">
+                  <p class="calendar__event">
+                    Bulldog Club of Colorado Springs AM
+                  </p>
+                  <p class="calendar__place">
+                    Colorado Springs, CO 80905
+                  </p>
+                </div>
+
+
               </a>
             </li>
             <li class="calendar__item">
               <a class="calendar__link"
-                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/">
+                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/"
+                target="_blank">
                 <time class="calendar__data" datetime="2023-07-21">
                   Jul 21
                   <span class="calendar__day">
@@ -266,29 +363,34 @@
                   </span>
                 </time>
 
-                <p class="calendar__event">
-                  Oklahoma City Bulldog Club
-                </p>
-                <p class="calendar__place">
-                  North Oklahoma City, OK
-                </p>
+                <div class="calendar__info">
+                  <p class="calendar__event">
+                    Oklahoma City Bulldog Club
+                  </p>
+                  <p class="calendar__place">
+                    North Oklahoma City, OK
+                  </p>
+                </div>
+
+
               </a>
             </li>
             <li class="calendar__item">
-              <a class="calendar__link"
-                href="https://bulldogclubofamerica.org/about-bca/local-information/division-vi/">
+              <a class="calendar__link" href="https://bulldogclubofamerica.org/about-bca/local-information/division-vi/"
+                target="_blank">
                 <time class="calendar__data" datetime="2023-07-23">
                   Jul 23
                   <span class="calendar__day">
                     Thursday
                   </span>
                 </time>
-
-                <p class="calendar__event">
-                  Bulldog Club of America Division VI
-                  <p class="calendar__place">
-                    Plymouth, MN 55441
-                  </p>
+                <div class="calendar__info">
+                  <p class="calendar__event">
+                    Bulldog Club of America Division VI
+                    <p class="calendar__place">
+                      Plymouth, MN 55441
+                    </p>
+                </div>
               </a>
             </li>
           </ul>
@@ -297,7 +399,8 @@
 
             <li class="calendar__item">
               <a class="calendar__link"
-                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/">
+                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/"
+                target="_blank">
 
                 <time class="calendar__data" datetime="2023-01-05">
                   Jan 5
@@ -306,30 +409,35 @@
                   </span>
                 </time>
 
-                <p class="calendar__event">
-                  Bulldog Club of Central Iowa
-                </p>
-                <p class="calendar__place">
-                  Amana, IA 52203
-                </p>
+                <div class="calendar__info">
+                  <p class="calendar__event">
+                    Bulldog Club of Central Iowa
+                  </p>
+                  <p class="calendar__place">
+                    Amana, IA 52203
+                  </p>
+                </div>
               </a>
             </li>
             <li class="calendar__item">
               <a class="calendar__link"
-                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/">
+                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/"
+                target="_blank">
                 <time class="calendar__data" datetime="2023-09-01">
                   Sep 1
                   <span class="calendar__day">
                     Thursday
                   </span>
                 </time>
+                <div class="calendar__info">
+                  <p class="calendar__event">
+                    Bulldog Club of America Division IV
+                  </p>
+                  <p class="calendar__place">
+                    Amana, Iowa 52203
+                  </p>
+                </div>
 
-                <p class="calendar__event">
-                  Bulldog Club of America Division IV
-                </p>
-                <p class="calendar__place">
-                  Amana, Iowa 52203
-                </p>
               </a>
             </li>
           </ul>
@@ -351,83 +459,98 @@
       <a class="logo footer__logo" href="#">
         <img class="logo__img " src="./images/logo-white.svg" width="200" height="166" alt="Logo Bulldog Club">
       </a>
-      <div class="footer__links">
-        <p class="footer__subtitle">
-          Navigate
-        </p>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a class="footer__link current" href="#">
-              Home
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              Breed Info
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              Show&Events
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              Contact us
-            </a>
-          </li>
-        </ul>
 
-      </div>
+      <div class="footer__info">
+        <div class="footer__links">
+          <p class="footer__subtitle">
+            Navigate
+          </p>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link current" href="#">
+                Home
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Breed Info
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Show&Events
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Contact us
+              </a>
+            </li>
+          </ul>
 
-      <address class="footer__contacts">
-        <p class="footer__subtitle">
-          Contact us
-        </p>
-        <div class="footer__address">
-          4517 Washington Ave, Manchester Kentucky 39495
         </div>
-        <a class="footer__phone" href="tel:+16065550123">
-          (606) 555-0123
-        </a>
-        <a class="footer__mail" href="mailto:georgia.young@example.com">
-          <svg class="footer__icon" width="20" height="20">
-            <use href="./images/symbol-defs.svg#icon-mail"></use>
-          </svg>
-          georgia.young@example.com
-        </a>
-      </address>
 
-      <div class="footer__social">
-        <p class="footer__subtitle">
-          Join us
-        </p>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="30" height="30">
-                <use href="./images/symbol-defs.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="30" height="30">
-                <use href="./images/symbol-defs.svg#icon-inst"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="30" height="30">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <address class="footer__contacts">
+          <p class="footer__subtitle">
+            Contact us
+          </p>
+          <div class="footer__address">
+            4517 Washington Ave, Manchester Kentucky 39495
+          </div>
+          <a class="footer__phone" href="tel:+16065550123">
+            (606) 555-0123
+          </a>
+          <a class="footer__mail" href="mailto:georgia.young@example.com">
+            <svg class="footer__icon" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            georgia.young@example.com
+          </a>
+        </address>
 
+        <div class="footer__social">
+          <p class="footer__subtitle">
+            Join us
+          </p>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="./images/symbol-defs.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="./images/symbol-defs.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+
     </div>
+    <ul class="footer__bottom">
+      <li class="footer__bottom-item">
+        2022@BuldogClub
+      </li>
+      <li class="footer__bottom-item">
+        <a class="footer__bottom-link"
+          href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=irynakozlova.k@gmail.com" target="_blank">
+          created by iryna kozlova
+        </a>
+      </li>
+    </ul>
+
 
   </div>
 

@@ -21,12 +21,20 @@
 
 <body>
 
-  <header class="header header--index">
+ <header class="header">
   <div class="container">
     <div class="header__inner">
       <a class="logo focus header__logo" href="#">
         <img class="logo__img" src="./images/logo-primary.svg" width="104" height="86" alt="Logo Bulldog Club">
       </a>
+
+      <button class="header__burger" type="button">
+        <span class=" sr-only">Open menu</span>
+        <svg class="header__burger-icon" width="44" height="44">
+          <use href="./images/symbol-defs.svg#icon-burger-open"></use>
+        </svg>
+      </button>
+
       <nav class="header__menu">
         <ul class="header__list">
           <li class="header__item">
@@ -57,128 +65,201 @@
           </li>
         </ul>
       </nav>
-      <button class="btn-secondary" type="button" data-modal-button>
+
+      <button class="header__btn btn-secondary" type="button" data-modal-button>
         Sign in
       </button>
 
       <div class="backdrop hidden" data-modal>
         <div class="modal">
-          <div class="modal__top">
+          <div class="modal__inner">
+            <div class="modal__top">
 
-            <button class="modal__tab active" type="button" data-tab="tab-1">
-              Register
-            </button>
-            <button class="modal__tab" type="button" data-tab="tab-2">
-              Login
-            </button>
+              <button class="modal__tab active" type="button" data-tab="tab-1">
+                Register
+              </button>
+              <button class="modal__tab" type="button" data-tab="tab-2">
+                Login
+              </button>
+            </div>
+
+            <div class="modal__content">
+
+              <div class="modal__item" data-tab-content id="tab-1">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="modal__item  hidden" data-tab-content id="tab-2">
+                <form class="form modal__form" action="#">
+                  <label class="form__label ">
+                    E-mail address*
+                    <input class="form__input" type="text" required>
+                  </label>
+                  <label class="form__label">
+                    Password*
+                    <input class="form__input" type="password" required>
+                  </label>
+                  <label class="form__label ">
+                    <input class="form__checkbox" type="checkbox">
+                    Remember me?
+                  </label>
+                  <button class="button form__button" type="submit">
+                    Sing Up
+                  </button>
+                  <a class="form__link" href="#">
+                    Forgot Password?
+                  </a>
+                </form>
+
+                <ul class="social modal__social">
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--dark" href="#">
+                      <svg class="social__icon social__icon--dark" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="modal__content">
-
-            <div class="modal__item" data-tab-content id="tab-1">
-              <form class="form modal__form" action="#">
-                <label class="form__label ">
-                  E-mail address*
-                  <input class="form__input" type="text" required>
-                </label>
-                <label class="form__label">
-                  Password*
-                  <input class="form__input" type="password" required>
-                </label>
-                <button class="button form__button" type="submit">
-                  Sing Up
-                </button>
-              </form>
-
-              <ul class="social modal__social">
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-fb"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-inst"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon social__icon--dark" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-
-            </div>
-            <div class="modal__item  hidden" data-tab-content id="tab-2">
-              <form class="form modal__form" action="#">
-                <label class="form__label ">
-                  E-mail address*
-                  <input class="form__input" type="text" required>
-                </label>
-                <label class="form__label">
-                  Password*
-                  <input class="form__input" type="password" required>
-                </label>
-                <label class="form__label ">
-                  <input class="form__checkbox" type="checkbox">
-                  Remember me?
-                </label>
-                <button class="button form__button" type="submit">
-                  Sing Up
-                </button>
-                <a class="form__link" href="#">
-                  Forgot Password?
-                </a>
-              </form>
-
-              <ul class="social modal__social">
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-fb"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-inst"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--dark" href="#">
-                    <svg class="social__icon social__icon--dark" width="30" height="30">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
 
           <button class="modal__btn" type="button" data-modal-close>
             <svg class="modal__icon" width="32" height="32">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
-
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="mobile-menu">
+
+    <div class="mobile-menu__top">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link  current" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@show" href="show.html">
+            Show&Events
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@gallery" href="gallery.html">
+            Gallery
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@blog" href="blog.html">
+            Blog
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link @@contact" href="contact.html">
+            Contact us
+          </a>
+        </li>
+
+      </ul>
+
+      <button class="mobile-menu__btn btn-secondary" type="button" data-modal-button>
+        Sign in
+      </button>
+
+    </div>
+
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-inst"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button class="mobile-menu__button" type="button">
+      <span class=" sr-only">Close menu</span>
+      <svg class="mobile-menu__icon" width="44" height="44">
+        <use href="./images/symbol-defs.svg#icon-burger-close"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
   <main>
 
     <section class="hero">
-      <div class="container">
+      <div class="container hero__container">
         <div class="hero__inner">
           <div class="hero__content">
             <h1 class="title hero__title">
@@ -200,15 +281,23 @@
       <div class="about__container">
         <div class="about__inner">
           <div class="about__photos">
-            <div class="about__column-1">
-              <img class="about__img about__img--top" src="./images/photo-1.jpg" width="250" height="290"
-                alt="Our member">
-              <img class="about__img" src="./images/photo-2.jpg" width="250" height="200" alt="Our member">
+            <div class="about__column">
+              <div class="about__img-box about__img-box--1">
+                <img class="about__img" src="./images/photo-1.jpg" width="300" height="290" alt="Our member">
+              </div>
+
+              <div class="about__img-box about__img-box--2">
+                <img class="about__img" src="./images/photo-2.jpg" width="300" height="200" alt="Our member">
+              </div>
             </div>
-            <div class="about__column-2">
-              <img class="about__img about__img--top" src="./images/photo-3.jpg" width="330" height="230"
-                alt="Our member">
-              <img class="about__img" src="./images/photo-4.jpg" width="330" height="260" alt="Our member">
+
+            <div class="about__column about__column--rigth">
+              <div class="about__img-box about__img-box--2">
+                <img class="about__img" src="./images/photo-3.jpg" width="300" height="200" alt="Our member">
+              </div>
+              <div class="about__img-box about__img-box--1">
+                <img class="about__img" src="./images/photo-4.jpg" width="300" height="290" alt="Our member">
+              </div>
             </div>
           </div>
           <div class="about__content">
@@ -264,7 +353,7 @@
         </ul>
       </div>
 
-    </section>
+    </section> 
 
     <section class="info section">
       <div class="container">
@@ -308,7 +397,7 @@
               </a>
             </article>
           </li>
-          <li class="info__item">
+          <li class="info__item info__item--hidden">
             <article class="blog-card">
               <a class="blog-card__link" href="blog-one.html">
                 <img class="blog-card__img" src="./images/articles/blog-04.jpg" width="530" height="330" alt="#">
@@ -329,7 +418,7 @@
         <ul class="info__row">
           <li class="info__item">
             <article class="blog-card">
-              <a class="blog-card_link" href="blog-one.html">
+              <a class="blog-card__link" href="blog-one.html">
                 <img class="blog-card__img" src="./images/articles/blog-03.jpg" width="530" height="330" alt="#">
                 <h3 class="blog-card__title">
                   English Bulldog Breed Guide: Characteristics, History & Care
@@ -375,21 +464,21 @@
             <h2 class="title adv__title">
               Join our Team
             </h2>
-            <p class="adv adv__txt">
+            <p class="adv__txt">
               When you join our club, you'll get an exciting year full of canine adventures, helping you to learn new
               skills, build confidence and make new friends through our programme of dog activities across the World.
             </p>
-            <ul class="adv adv__list">
-              <li class="adv adv__item">
+            <ul class="adv__list">
+              <li class="adv__item">
                 Showing
               </li>
-              <li class="adv adv__item">
+              <li class="adv__item">
                 Training
               </li>
-              <li class="adv adv__item">
+              <li class="adv__item">
                 Media center
               </li>
-              <li class="adv adv__item">
+              <li class="adv__item">
                 Help center
               </li>
             </ul>
@@ -402,7 +491,7 @@
       </div>
     </section>
 
-    <section class="news section">
+   <section class="news section">
       <div class="container">
 
         <div class="swiper">
@@ -415,16 +504,16 @@
               <div class="swiper-button-next"></div>
             </div>
           </div>
-          <!-- Additional required wrapper -->
+          
           <div class="swiper-wrapper">
-            <!-- Slides -->
+            
             <div class="swiper-slide">
               <article class="blog-card blog-card--small">
                 <a class="blog-card__link" href="blog-one.html">
                   <img class="blog-card__img" src="./images/articles/blog-8.jpg" width="530" height="330" alt="#">
                   <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
                   <h3 class="blog-card__title">
-                    Health and Care A to Z
+                    Health and Care A to Z. Tips and advice
                   </h3>
                   <p class="blog-card__txt">
                     TDiscover our comprehensive A to Z guide covering various common health issues that dogs may
@@ -506,7 +595,6 @@
                 </a>
               </article>
             </div>
-
           </div>
 
           <div class="swiper-pagination"></div>
@@ -518,90 +606,105 @@
 
   </main>
 
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="footer__inner">
 
       <a class="logo footer__logo" href="#">
         <img class="logo__img " src="./images/logo-white.svg" width="200" height="166" alt="Logo Bulldog Club">
       </a>
-      <div class="footer__links">
-        <p class="footer__subtitle">
-          Navigate
-        </p>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a class="footer__link current" href="#">
-              Home
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              Breed Info
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              Show&Events
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              Contact us
-            </a>
-          </li>
-        </ul>
 
-      </div>
+      <div class="footer__info">
+        <div class="footer__links">
+          <p class="footer__subtitle">
+            Navigate
+          </p>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link current" href="#">
+                Home
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Breed Info
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Show&Events
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Contact us
+              </a>
+            </li>
+          </ul>
 
-      <address class="footer__contacts">
-        <p class="footer__subtitle">
-          Contact us
-        </p>
-        <div class="footer__address">
-          4517 Washington Ave, Manchester Kentucky 39495
         </div>
-        <a class="footer__phone" href="tel:+16065550123">
-          (606) 555-0123
-        </a>
-        <a class="footer__mail" href="mailto:georgia.young@example.com">
-          <svg class="footer__icon" width="20" height="20">
-            <use href="./images/symbol-defs.svg#icon-mail"></use>
-          </svg>
-          georgia.young@example.com
-        </a>
-      </address>
 
-      <div class="footer__social">
-        <p class="footer__subtitle">
-          Join us
-        </p>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="30" height="30">
-                <use href="./images/symbol-defs.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="30" height="30">
-                <use href="./images/symbol-defs.svg#icon-inst"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="30" height="30">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <address class="footer__contacts">
+          <p class="footer__subtitle">
+            Contact us
+          </p>
+          <div class="footer__address">
+            4517 Washington Ave, Manchester Kentucky 39495
+          </div>
+          <a class="footer__phone" href="tel:+16065550123">
+            (606) 555-0123
+          </a>
+          <a class="footer__mail" href="mailto:georgia.young@example.com">
+            <svg class="footer__icon" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            georgia.young@example.com
+          </a>
+        </address>
 
+        <div class="footer__social">
+          <p class="footer__subtitle">
+            Join us
+          </p>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="./images/symbol-defs.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="./images/symbol-defs.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="30" height="30">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+
     </div>
+    <ul class="footer__bottom">
+      <li class="footer__bottom-item">
+        2022@BuldogClub
+      </li>
+      <li class="footer__bottom-item">
+        <a class="footer__bottom-link"
+          href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=irynakozlova.k@gmail.com" target="_blank">
+          created by iryna kozlova
+        </a>
+      </li>
+    </ul>
+
 
   </div>
 

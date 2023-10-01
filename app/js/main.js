@@ -1,6 +1,24 @@
 
 $(function () {
 
+   //Mobile Menu
+    const burger = document.querySelector('.header__burger');
+    const mobileMenu = document.querySelector('.mobile-menu'); 
+    const closeButton = document.querySelector('.mobile-menu__button');
+    const bodyLock = document.querySelector('body'); 
+
+    burger.addEventListener('click', () => {
+      mobileMenu.classList.add('active'); 
+      bodyLock.classList.add('lock');
+    });
+
+    closeButton.addEventListener('click', () => {
+      mobileMenu.classList.remove('active'); 
+      bodyLock.classList.remove('lock');
+    });
+
+
+
   // pagination
 
   const prevNext = document.querySelectorAll('.pagination__btn');
@@ -55,7 +73,7 @@ $(function () {
 
   //swiper
   const swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30, 
 
     pagination: {
@@ -68,6 +86,20 @@ $(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
+    breakpoints: {
+    
+    568: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }    
+  }  
+
   });
 
   //swiper end

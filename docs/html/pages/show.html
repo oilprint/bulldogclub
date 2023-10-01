@@ -21,21 +21,44 @@
 
 <body>
 
- @@include('../components/header.html', {
- "show": "current"
- })
+  @@include('../components/header.html', {
+  "show": "current"
+  })
 
 
   <main>
 
-    <section class="about section about--right">
+    <h1 class="sr-only">
+      Shows and Additional Events
+    </h1>
+
+    <section class="about section about__section">
       <div class="about__container">
         <div class="about__inner">
-          <div class="about__content">
+          <div class="about__photos">
+            <div class="about__column">
+              <div class="about__img-box about__img-box--1">
+                <img class="about__img" src="./images/show-01.jpg" width="300" height="290" alt="Our member">
+              </div>
 
-            <h1 class="title about__title">
+              <div class="about__img-box about__img-box--2">
+                <img class="about__img" src="./images/show-02.jpg" width="300" height="200" alt="Our member">
+              </div>
+            </div>
+
+            <div class="about__column about__column--rigth">
+              <div class="about__img-box about__img-box--2">
+                <img class="about__img" src="./images/show-03.jpg" width="300" height="200" alt="Our member">
+              </div>
+              <div class="about__img-box about__img-box--1">
+                <img class="about__img" src="./images/show-04.jpg" width="300" height="290" alt="Our member">
+              </div>
+            </div>
+          </div>
+          <div class="about__content">
+            <h2 class="title about__title">
               Dog Shows
-            </h1>
+            </h2>
             <div class="about__info">
               <p class="about__txt">
                 Formal and Informal Dog Shows Dog shows can be categorized as either formal or informal. Formal shows
@@ -56,25 +79,12 @@
               Read more
             </a>
 
-
-          </div>
-
-          <div class="about__photos">
-            <div class="about__column-1">
-              <img class="about__img about__img--top" src="images/show-01.jpg" width="250" height="290"
-                alt="Our member">
-              <img class="about__img" src="images/show-02.jpg" width="250" height="200" alt="Our member">
-            </div>
-            <div class="about__column-2">
-              <img class="about__img about__img--top" src="images/show-04.jpg" width="330" height="230"
-                alt="Our member">
-              <img class="about__img" src="images/show-03.jpg" width="330" height="260" alt="Our member">
-            </div>
           </div>
         </div>
       </div>
 
     </section>
+
 
     <section class="calendar section calendar__section">
       <div class="container">
@@ -89,7 +99,8 @@
           <ul class="calendar__list">
             <li class="calendar__item">
               <a class="calendar__link"
-                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/">
+                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/"
+                target="_blank">
 
                 <time class="calendar__data" datetime="2023-01-05">
                   Jan 5
@@ -98,17 +109,22 @@
                   </span>
                 </time>
 
-                <p class="calendar__event">
-                  Bulldog Club of Colorado Springs AM
-                </p>
-                <p class="calendar__place">
-                  Colorado Springs, CO 80905
-                </p>
+                <div class="calendar__info">
+                  <p class="calendar__event">
+                    Bulldog Club of Colorado Springs AM
+                  </p>
+                  <p class="calendar__place">
+                    Colorado Springs, CO 80905
+                  </p>
+                </div>
+
+
               </a>
             </li>
             <li class="calendar__item">
               <a class="calendar__link"
-                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/">
+                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/"
+                target="_blank">
                 <time class="calendar__data" datetime="2023-07-21">
                   Jul 21
                   <span class="calendar__day">
@@ -116,29 +132,34 @@
                   </span>
                 </time>
 
-                <p class="calendar__event">
-                  Oklahoma City Bulldog Club
-                </p>
-                <p class="calendar__place">
-                  North Oklahoma City, OK
-                </p>
+                <div class="calendar__info">
+                  <p class="calendar__event">
+                    Oklahoma City Bulldog Club
+                  </p>
+                  <p class="calendar__place">
+                    North Oklahoma City, OK
+                  </p>
+                </div>
+
+
               </a>
             </li>
             <li class="calendar__item">
-              <a class="calendar__link"
-                href="https://bulldogclubofamerica.org/about-bca/local-information/division-vi/">
+              <a class="calendar__link" href="https://bulldogclubofamerica.org/about-bca/local-information/division-vi/"
+                target="_blank">
                 <time class="calendar__data" datetime="2023-07-23">
                   Jul 23
                   <span class="calendar__day">
                     Thursday
                   </span>
                 </time>
-
-                <p class="calendar__event">
-                  Bulldog Club of America Division VI
-                  <p class="calendar__place">
-                    Plymouth, MN 55441
-                  </p>
+                <div class="calendar__info">
+                  <p class="calendar__event">
+                    Bulldog Club of America Division VI
+                    <p class="calendar__place">
+                      Plymouth, MN 55441
+                    </p>
+                </div>
               </a>
             </li>
           </ul>
@@ -147,7 +168,8 @@
 
             <li class="calendar__item">
               <a class="calendar__link"
-                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/">
+                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/"
+                target="_blank">
 
                 <time class="calendar__data" datetime="2023-01-05">
                   Jan 5
@@ -156,30 +178,35 @@
                   </span>
                 </time>
 
-                <p class="calendar__event">
-                  Bulldog Club of Central Iowa
-                </p>
-                <p class="calendar__place">
-                  Amana, IA 52203
-                </p>
+                <div class="calendar__info">
+                  <p class="calendar__event">
+                    Bulldog Club of Central Iowa
+                  </p>
+                  <p class="calendar__place">
+                    Amana, IA 52203
+                  </p>
+                </div>
               </a>
             </li>
             <li class="calendar__item">
               <a class="calendar__link"
-                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/">
+                href="https://bulldogclubofamerica.org/about-bca/local-information/division-iv/bulldog-club-of-colorado-springs/"
+                target="_blank">
                 <time class="calendar__data" datetime="2023-09-01">
                   Sep 1
                   <span class="calendar__day">
                     Thursday
                   </span>
                 </time>
+                <div class="calendar__info">
+                  <p class="calendar__event">
+                    Bulldog Club of America Division IV
+                  </p>
+                  <p class="calendar__place">
+                    Amana, Iowa 52203
+                  </p>
+                </div>
 
-                <p class="calendar__event">
-                  Bulldog Club of America Division IV
-                </p>
-                <p class="calendar__place">
-                  Amana, Iowa 52203
-                </p>
               </a>
             </li>
           </ul>

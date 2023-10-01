@@ -1,14 +1,15 @@
 .backdrop {
   position: fixed;
-  background-color: rgba($dark, 0.3);
   left: 0;
-  right: 0;
   top: 0;
-  bottom: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  z-index: 100;
+  background-color: rgba($dark, 0.3);
   backdrop-filter: blur(1px);
-  transition: opacity 0.2s;
+  transition: opacity 0.5s;
+
 
 
   &.hidden {
@@ -23,18 +24,57 @@
 
 .modal {
   position: relative;
-  margin: auto;
-  transform: scale(1);
-  width: 670px;
-  padding: 70px;
+  max-width: 450px;
+  width: 90%;
+  padding: 50px 20px 30px;
   background-color: $light;
-
+  border-radius: 6px;
+  transform: scale(1);
+  overflow-y: scroll;
+  margin: 20px auto;
+  scroll-behavior: smooth;
   transition: transform 0.5s;
+
+  @media (min-width: 375px) {
+    margin: auto;
+    overflow-y: hidden;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 670px;
+    padding: 70px;
+    margin: auto;
+    overflow-y: hidden;
+  }
+
+  @media (min-width: 1024px) {
+    margin: auto;
+    overflow-y: hidden;
+  }
+
+  @media (min-width: 375px) and (orientation: landscape) {
+    margin: 20px auto;
+    overflow-y: scroll;
+  }
+
+  @media (min-width: 768px) and (orientation: landscape) {
+     max-width: 670px;
+     padding: 70px;
+     margin: auto;
+     overflow-y: hidden;
+  }
+
+
+  
+
+
+
+
 
   &__btn {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 8px;
+    right: 8px;
     width: 40px;
     height: 40px;
     display: flex;
@@ -44,6 +84,11 @@
     border: 1px solid rgba($grey, 0.1);
     transition: border-color 0.4s, border 0.4s,
       box-shadow 0.4s;
+
+    @media (min-width: (578px)) {
+      top: 16px;
+      right: 16px;
+    }
 
     &:focus {
       border-color: $grey;
@@ -59,7 +104,7 @@
 
     &:active {
       border: 1px solid rgba($grey, 0.1);
-      
+
 
       .modal__icon {
         fill: $accent;
@@ -73,11 +118,15 @@
   }
 
   &__top {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border-bottom: 1px solid $grey;
     font-size: 32px;
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: (375px)) {
+      margin-bottom: 40px;
+    }
   }
 
   &__tab {
@@ -113,7 +162,15 @@
   }
 
   &__form {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
+
+    @media (min-width: (375px)) {
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: (578px)) {
+      margin-bottom: 120px;
+    }
   }
 
   &__social {
@@ -133,8 +190,16 @@
       border: 1px solid $grey;
       left: 0;
       right: 0;
-      top: -82px;
+      top: -56px;
       z-index: 10;
+
+      @media (min-width: (375px)) {
+        top: -70px;
+      }
+
+      @media (min-width: (578px)) {
+        top: -82px;
+      }
     }
 
     &::after {
@@ -142,10 +207,18 @@
       content: '';
       left: 0;
       right: 0;
-      top: -60px;
+      top: -30px;
       width: 100%;
       height: 1px;
       background-color: $grey;
+
+      @media (min-width: (375px)) {
+        top: -47px;
+      }
+
+      @media (min-width: (578px)) {
+        top: -60px;
+      }
 
     }
   }

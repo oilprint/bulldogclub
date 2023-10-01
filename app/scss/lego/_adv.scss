@@ -3,20 +3,30 @@
   background-size: cover;
   background-position: center;
 
-
   &__inner {
     display: flex;
     justify-content: flex-end;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 0;
     background-position: left;
     padding: 38px 0;
+
+    @media (min-width: (768px)) {
+      background-size: 40%;
+    }
   }
 
   &__content {
-    max-width: 570px;
     width: 100%;
     font-size: 20px;
+
+    @media (min-width: (768px)) {
+      width: 57%;
+    }
+
+    @media (min-width: (1200px)) {
+      width: 570px;
+    }
   }
 
   &__title {
@@ -28,7 +38,11 @@
   }
 
   &__list {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    
+     @media (min-width: (768px)) {
+      margin-bottom: 60px;
+     }
   }
 
   &__item {

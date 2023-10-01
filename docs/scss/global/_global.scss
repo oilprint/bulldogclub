@@ -12,6 +12,11 @@ body {
   color: $primary;
   font-style: normal;
   font-weight: 400;
+  overflow-x: hidden;
+
+  &.lock {
+    overflow-y: hidden;
+  }
 }
 
 main {
@@ -30,14 +35,26 @@ main {
 }
 
 .title {
+  font-size: 60px;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 84px;
   line-height: 1;
   color: $secondary;
+
+  @media (min-width: (576px)) {
+    font-size: 84px;
+  }
 }
 
 .section {
-  padding: 70px 0;
+  padding: 30px 0;
+
+  @media (min-width: (768px)) {
+    padding: 50px 0;
+  }
+
+  @media (min-width: (768px)) {
+    padding: 70px 0;
+  }
 }
 
 .sr-only {
@@ -85,7 +102,7 @@ main {
     }
 
     &:hover {
-      background-color: $secondary;
+      background-color: $accent;
 
       .social__icon {
         fill: $light;
@@ -115,14 +132,20 @@ main {
     object-fit: cover;
     margin-bottom: 20px;
     border-radius: 24px;
+    height: auto;
   }
 
   &__title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     color: $secondary;
     margin-bottom: 8px;
-    min-height: 2.6em;
+
+
+    @media (min-width: (576px)) {
+      font-size: 28px;
+      min-height: 2.6em;
+    }
   }
 
   &__txt {
@@ -161,7 +184,11 @@ main {
     width: 100%;
     background-color: $bg-light;
     border-radius: 10px;
-    margin: 4px 0 20px;
+    margin: 4px 0 10px;
+
+    @media (min-width: (768px)) {
+      margin: 4px 0 20px;
+    }
 
     &--textarea {
       min-height: 120px;
@@ -181,8 +208,17 @@ main {
   }
 
   &__button {
-    width: 100%;
-    margin: 40px 0 20px;
+    display: block;
+    width: fit-content;
+    margin: 10px auto 4px;
+
+    @media (min-width: (375px)) {
+      margin: 20px auto 10px;
+    }
+
+    @media (min-width: (578px)) {
+      margin: 40px auto 20px;
+    }
   }
 
   &__link {
@@ -238,6 +274,7 @@ main {
   &__img-box {
     overflow: hidden;
     border-radius: 24px 24px 0 0;
+    width: 100%;
   }
 
   &__link {
@@ -266,20 +303,32 @@ main {
 
   &__img {
     object-fit: cover;
+    height: 260px;
     transition: transform 0.4s;
 
+    @media (min-width: (768px)) {
+      height: 400px;
+    }
   }
 
   &__bottom {
-    padding: 30px;
+    padding: 15px;
+
+    @media (min-width: (768px)) {
+      padding: 30px;
+    }
   }
 
   &__title {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     color: $secondary;
     margin-bottom: 4px;
     transition: transform 0.4s;
+
+    @media (min-width: (768px)) {
+      font-size: 26px;
+    }
   }
 
   &__data {
