@@ -30,38 +30,45 @@
   background-color: $light;
   border-radius: 6px;
   transform: scale(1);
-  overflow-y: scroll;
   margin: 20px auto;
-  scroll-behavior: smooth;
+  // overflow-y: scroll;
+  // scroll-behavior: smooth;
+
+
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+
   transition: transform 0.5s;
 
   @media (min-width: 375px) {
     margin: auto;
-    overflow-y: hidden;
+    // overflow-y: hidden;
   }
 
   @media (min-width: 768px) {
     max-width: 670px;
     padding: 70px;
     margin: auto;
-    overflow-y: hidden;
+    // overflow-y: hidden;
   }
 
   @media (min-width: 1024px) {
     margin: auto;
-    overflow-y: hidden;
+    // overflow-y: hidden;
   }
 
   @media (min-width: 375px) and (orientation: landscape) {
     margin: 20px auto;
-    overflow-y: scroll;
+    // overflow-y: scroll;
   }
 
   @media (min-width: 768px) and (orientation: landscape) {
      max-width: 670px;
      padding: 70px;
-     margin: auto;
-     overflow-y: hidden;
+     margin: 20px auto;
+    //  overflow-y: hidden;
   }
 
 
