@@ -2,7 +2,7 @@
 <img src="https://github.com/oilprint/bulldogclub/blob/main/bulldog.jpg" target="_blank" align="center" style="width: 100%" />
 </div>  
 
-# [web-site](https://oilprint.github.io/bulldogclub/)
+# [website](https://oilprint.github.io/bulldogclub/ )
 
 Starting from the idea and design, I developed a multi-page website, utilizing Figma for design and following a 'mobile-first' approach for the front end.
 My approach ensures optimal website adaptation for mobile devices, providing a pleasant and user-friendly experience.
