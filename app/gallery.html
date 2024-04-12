@@ -20,8 +20,8 @@
 </head>
 
 <body>
-
-  <header class="header">
+  <div class="wrapper">
+    <header class="header">
   <div class="container">
     <div class="header__inner">
       <a class="logo focus header__logo" href="#">
@@ -89,11 +89,13 @@
                 <form class="form modal__form" action="#">
                   <label class="form__label ">
                     E-mail address*
-                    <input class="form__input" type="text" required>
+                    <input class="form__input" id="username" type="text" name="username" autocomplete="username"
+                      required>
                   </label>
                   <label class="form__label">
                     Password*
-                    <input class="form__input" type="password" required>
+                    <input class="form__input" id="password" type="password" name="password"
+                      autocomplete="current-password" required>
                   </label>
                   <button class="button form__button" type="submit">
                     Sing Up
@@ -129,11 +131,11 @@
                 <form class="form modal__form" action="#">
                   <label class="form__label ">
                     E-mail address*
-                    <input class="form__input" type="text" required>
+                    <input class="form__input" type="text" name="username" autocomplete="username" required>
                   </label>
                   <label class="form__label">
                     Password*
-                    <input class="form__input" type="password" required>
+                    <input class="form__input" type="password" name="password" autocomplete="current-password" required>
                   </label>
                   <label class="form__label ">
                     <input class="form__checkbox" type="checkbox">
@@ -256,147 +258,145 @@
   </div>
 </header>
 
+    <main>
+      <section class="gallery section gallery__section">
+        <div class="container">
 
-  <main>
+          <h1 class="title gallery__title">
+            Our dogs
+          </h1>
 
-    <section class="gallery section gallery__section">
-      <div class="container">
+          <ul class="gallery__filter">
+            <li class="gallery__filter-item">
+              <button class="gallery__button" type="button" data-filter="all">
+                All
+              </button>
+            </li>
+            <li class="gallery__filter-item">
+              <button class="gallery__button" type="button" data-filter=".french">
+                French bulldog
+              </button>
+            </li>
+            <li class="gallery__filter-item">
+              <button class="gallery__button" type="button" data-filter=".english">
+                English bulldog
+              </button>
+            </li>
+            <li class="gallery__filter-item">
+              <button class="gallery__button" type="button" data-filter=".american">
+                american bulldog
+              </button>
+            </li>
+          </ul>
 
-        <h1 class="title gallery__title">
-          Our dogs
-        </h1>
+          <ul class="gallery__list">
 
-        <ul class="gallery__filter">
-          <li class="gallery__filter-item">
-            <button class="gallery__button" type="button" data-filter="all">
-              All
-            </button>
-          </li>
-          <li class="gallery__filter-item">
-            <button class="gallery__button" type="button" data-filter=".french">
-              French bulldog
-            </button>
-          </li>
-          <li class="gallery__filter-item">
-            <button class="gallery__button" type="button" data-filter=".english">
-              English bulldog
-            </button>
-          </li>
-          <li class="gallery__filter-item">
-            <button class="gallery__button" type="button" data-filter=".american">
-              american bulldog
-            </button>
-          </li>
-        </ul>
+            <li class="gallery__item mix french">
+              <a class="gallery__link" href="images/gallery/img-big-01.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-01.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix english">
+              <a class="gallery__link" href="images/gallery/img-big-02.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-02.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
 
-        <ul class="gallery__list">
+            <li class="gallery__item mix french">
+              <a class="gallery__link" href="images/gallery/img-big-20.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-20.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix american">
+              <a class="gallery__link" href="images/gallery/img-big-03.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-03.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix american">
+              <a class="gallery__link" href="images/gallery/img-big-04.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-04.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix french">
+              <a class="gallery__link" href="images/gallery/img-big-05.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-05.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix english">
+              <a class="gallery__link" href="images/gallery/img-big-06.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-06.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix english">
+              <a class="gallery__link" href="images/gallery/img-big-07.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-07.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix french">
+              <a class="gallery__link" href="images/gallery/img-big-08.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-08.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix french">
+              <a class="gallery__link" href="images/gallery/img-big-19.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-19.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix french">
+              <a class="gallery__link" href="images/gallery/img-big-09.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-09.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
 
-          <li class="gallery__item mix french">
-            <a class="gallery__link" href="images/gallery/img-big-01.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-01.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix english">
-            <a class="gallery__link" href="images/gallery/img-big-02.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-02.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
+            <li class="gallery__item mix english">
+              <a class="gallery__link" href="images/gallery/img-big-12.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-12.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
 
-          <li class="gallery__item mix french">
-            <a class="gallery__link" href="images/gallery/img-big-20.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-20.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix american">
-            <a class="gallery__link" href="images/gallery/img-big-03.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-03.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix american">
-            <a class="gallery__link" href="images/gallery/img-big-04.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-04.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix french">
-            <a class="gallery__link" href="images/gallery/img-big-05.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-05.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix english">
-            <a class="gallery__link" href="images/gallery/img-big-06.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-06.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix english">
-            <a class="gallery__link" href="images/gallery/img-big-07.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-07.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix french">
-            <a class="gallery__link" href="images/gallery/img-big-08.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-08.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix french">
-            <a class="gallery__link" href="images/gallery/img-big-19.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-19.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix french">
-            <a class="gallery__link" href="images/gallery/img-big-09.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-09.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
+            <li class="gallery__item mix french">
+              <a class="gallery__link" href="images/gallery/img-big-13.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-13.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix french">
+              <a class="gallery__link" href="images/gallery/img-big-14.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-14.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix american">
+              <a class="gallery__link" href="images/gallery/img-big-15.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-15.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+            <li class="gallery__item mix french">
+              <a class="gallery__link" href="images/gallery/img-big-16.jpg" data-fancybox="gallery">
+                <img class="gallery__img" src="images/gallery/mini/img-small-16.jpg" width="270" height="200"
+                  alt="French dog wear a sweater">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          <li class="gallery__item mix english">
-            <a class="gallery__link" href="images/gallery/img-big-12.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-12.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
+    </main>
 
-          <li class="gallery__item mix french">
-            <a class="gallery__link" href="images/gallery/img-big-13.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-13.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix french">
-            <a class="gallery__link" href="images/gallery/img-big-14.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-14.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix american">
-            <a class="gallery__link" href="images/gallery/img-big-15.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-15.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-          <li class="gallery__item mix french">
-            <a class="gallery__link" href="images/gallery/img-big-16.jpg" data-fancybox="gallery">
-              <img class="gallery__img" src="images/gallery/mini/img-small-16.jpg" width="270" height="200"
-                alt="French dog wear a sweater">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
+    <footer class="footer">
   <div class="container">
     <div class="footer__inner">
 
@@ -490,7 +490,7 @@
       <li class="footer__bottom-item">
         <a class="footer__bottom-link"
           href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=irynakozlova.k@gmail.com" target="_blank">
-          created by iryna kozlova
+          created by kozlova.ux
         </a>
       </li>
     </ul>
@@ -499,6 +499,7 @@
   </div>
 
 </footer>
+  </div>
 
   <script src=" js/main.min.js"> </script>
 </body>

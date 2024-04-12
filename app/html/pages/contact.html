@@ -20,81 +20,81 @@
 </head>
 
 <body>
+  <div class="wrapper">
 
-  @@include('../components/header.html', {
-  "contact": "current"
-  })
+    @@include('../components/header.html', {
+    "contact": "current"
+    })
 
+    <main>
+      <section class="contact section contact__section">
+        <div class="container contact__container">
+          <div class="contact__inner" style="background-image:url(images/contact-bg.png);">
 
-  <main>
-    <section class="contact section contact__section">
-      <div class="container contact__container">
-        <div class="contact__inner" style="background-image:url(images/contact-bg.png);">
+            <div class="contact__content">
+              <h1 class="title contact__title">
+                Get in touch!
+              </h1>
+              <p class="contact__txt">
+                Contact us and ask whatever you want
+              </p>
 
-<div class="contact__content">
-  <h1 class="title contact__title">
-    get in touch!
-  </h1>
-  <p class="contact__txt">
-    Contact us and ask whatever you want
-  </p>
+              <div class="contact__info">
+                <div class="contact__item contact__item--address">
+                  <svg class=" contact__icon" width="20" height="20">
+                    <use href="images/symbol-defs.svg#icon-geo"></use>
+                  </svg>
+                  <span class="contact__item-txt">
+                    4517 Washington Ave, Manchester Kentucky 39495
+                  </span>
 
-  <div class="contact__info">
-    <div class="contact__item contact__item--address">
-      <svg class=" contact__icon" width="20" height="20">
-        <use href="images/symbol-defs.svg#icon-geo"></use>
-      </svg>
-      <span class="contact__item-txt">
-        4517 Washington Ave, Manchester Kentucky 39495
-      </span>
+                </div>
+                <a class="contact__item" href="mailto:georgia.young@example.com">
+                  <svg class="contact__icon" width="20" height="20">
+                    <use href="images/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                  georgia.young@example.com
+                </a>
+                <a class="contact__item contact__item--big" href="tel:+16065550123">
+                  <svg class="contact__icon" width="20" height="20">
+                    <use href="images/symbol-defs.svg#icon-phone-call"></use>
+                  </svg>
+                  (606) 555-0123
+                </a>
+              </div>
 
-    </div>
-    <a class="contact__item" href="mailto:georgia.young@example.com">
-      <svg class="contact__icon" width="20" height="20">
-        <use href="images/symbol-defs.svg#icon-mail"></use>
-      </svg>
-      georgia.young@example.com
-    </a>
-    <a class="contact__item contact__item--big" href="tel:+16065550123">
-      <svg class="contact__icon" width="20" height="20">
-        <use href="images/symbol-defs.svg#icon-phone-call"></use>
-      </svg>
-      (606) 555-0123
-    </a>
-  </div>
+              <form class="form contact__form" action="#">
+                <label class="form__label">
+                  Name
+                  <input class="form__input" type="text" name="name" required>
+                </label>
+                <label class="form__label">
+                  E-mail
+                  <input class="form__input" type="text" name="email" required>
+                </label>
+                <label class="form__label">
+                  Your message
+                  <textarea class="form__input form__input--textarea" name="text" required
+                    placeholder="Please type your message here..."></textarea>
+                </label>
+                <button class="button contact__button" type="submit">
+                  Send message
+                </button>
+              </form>
+            </div>
+          </div>
 
-  <form class="form contact__form" action="#">
-    <label class="form__label">
-      Name
-      <input class="form__input" type="text" name="name" required>
-    </label>
-    <label class="form__label">
-      E-mail
-      <input class="form__input" type="text" name="email" required>
-    </label>
-    <label class="form__label">
-      Your message
-      <textarea class="form__input form__input--textarea" name="text" required
-        placeholder="Please type your message here..."></textarea>
-    </label>
-    <button class="button contact__button" type="submit">
-      Send message
-    </button>
-  </form>
-</div>
         </div>
-        
-      </div>
 
-    </section>
+      </section>
 
 
 
 
-  </main>
+    </main>
 
-  @@include('../components/footer.html')
-
+    @@include('../components/footer.html')
+  </div>
   <script src=" js/main.min.js"> </script>
 </body>
 
