@@ -1,11 +1,10 @@
 
-$(function () {
 
    //Mobile Menu
     const burger = document.querySelector('.header__burger');
     const mobileMenu = document.querySelector('.mobile-menu'); 
     const closeButton = document.querySelector('.mobile-menu__button');
-    const bodyLock = document.querySelector('body'); 
+    const bodyLock = document.querySelector('.wrapper'); 
 
     burger.addEventListener('click', () => {
       mobileMenu.classList.add('active'); 
@@ -104,18 +103,11 @@ $(function () {
 
   //swiper end
 
-
- 
-
   // show more
-
-
   const btnShow = document.querySelector('#show');
   const cardShow = document.querySelector('[data-show]');
-
-  console.log('show');
       
-    btnShow.addEventListener('click', function() {
+    btnShow?.addEventListener('click', function() {
      
       if (
         cardShow.classList.toggle('hidden')
@@ -134,9 +126,10 @@ $(function () {
 
    
   
-});
 
 
-$(function () {
-  var mixer = mixitup('.gallery__list');
-});
+  $(function () {
+    if (window.location.pathname === '/gallery.html') {
+      var mixer = mixitup('.gallery__list');
+    }
+  });
