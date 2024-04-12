@@ -20,8 +20,9 @@
 </head>
 
 <body>
+  <div class="wrapper">
 
- <header class="header">
+    <header class="header">
   <div class="container">
     <div class="header__inner">
       <a class="logo focus header__logo" href="#">
@@ -89,11 +90,13 @@
                 <form class="form modal__form" action="#">
                   <label class="form__label ">
                     E-mail address*
-                    <input class="form__input" type="text" required>
+                    <input class="form__input" id="username" type="text" name="username" autocomplete="username"
+                      required>
                   </label>
                   <label class="form__label">
                     Password*
-                    <input class="form__input" type="password" required>
+                    <input class="form__input" id="password" type="password" name="password"
+                      autocomplete="current-password" required>
                   </label>
                   <button class="button form__button" type="submit">
                     Sing Up
@@ -129,11 +132,11 @@
                 <form class="form modal__form" action="#">
                   <label class="form__label ">
                     E-mail address*
-                    <input class="form__input" type="text" required>
+                    <input class="form__input" type="text" name="username" autocomplete="username" required>
                   </label>
                   <label class="form__label">
                     Password*
-                    <input class="form__input" type="password" required>
+                    <input class="form__input" type="password" name="password" autocomplete="current-password" required>
                   </label>
                   <label class="form__label ">
                     <input class="form__checkbox" type="checkbox">
@@ -256,357 +259,363 @@
   </div>
 </header>
 
-  <main>
-
-    <section class="hero">
-      <div class="container hero__container">
-        <div class="hero__inner">
-          <div class="hero__content">
-            <h1 class="title hero__title">
-              The club for you and your
-              best friend
-            </h1>
-            <p class="hero__txt">
-              The Bulldog Club offers people an opportunity to meet like-minded people and bond with their dog
-            </p>
-            <button class="button" type="button" data-modal-button>
-              Join Us
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about section">
-      <div class="about__container">
-        <div class="about__inner">
-          <div class="about__photos">
-            <div class="about__column">
-              <div class="about__img-box about__img-box--1">
-                <img class="about__img" src="./images/photo-1.jpg" width="300" height="290" alt="Our member">
-              </div>
-
-              <div class="about__img-box about__img-box--2">
-                <img class="about__img" src="./images/photo-2.jpg" width="300" height="200" alt="Our member">
-              </div>
-            </div>
-
-            <div class="about__column about__column--rigth">
-              <div class="about__img-box about__img-box--2">
-                <img class="about__img" src="./images/photo-3.jpg" width="300" height="200" alt="Our member">
-              </div>
-              <div class="about__img-box about__img-box--1">
-                <img class="about__img" src="./images/photo-4.jpg" width="300" height="290" alt="Our member">
-              </div>
-            </div>
-          </div>
-          <div class="about__content">
-            <h2 class="title about__title">
-              About Us
-            </h2>
-            <div class="about__info">
-              <p class="about__txt">
-                The Bulldog Club of Kentucky is a non-profit organization whose members range from professional Bulldog
-                breeders, people who compete at dog shows, owners of pet Bulldogs, and people who just love the breed.
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h1 class="title hero__title">
+                The club for you and your
+                best friend
+              </h1>
+              <p class="hero__txt">
+                The Bulldog Club offers people an opportunity to meet like-minded people and bond with their dog
               </p>
-              <p class="about__txt">
-                Our goal is to enhance the breed by promoting initiatives that focus on breeding dogs that are healthy
-                and have sound physical attributes, aligning with the standards set for the breed's excellence.
+              <button class="button" type="button" data-modal-button>
+                Join Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section">
+        <div class="about__container">
+          <div class="about__inner">
+            <div class="about__photos">
+              <div class="about__column">
+                <div class="about__img-box about__img-box--1">
+                  <img class="about__img" src="./images/photo-1.jpg" width="300" height="290" alt="Our member">
+                </div>
+
+                <div class="about__img-box about__img-box--2">
+                  <img class="about__img" src="./images/photo-2.jpg" width="300" height="200" alt="Our member">
+                </div>
+              </div>
+
+              <div class="about__column about__column--rigth">
+                <div class="about__img-box about__img-box--2">
+                  <img class="about__img" src="./images/photo-3.jpg" width="300" height="200" alt="Our member">
+                </div>
+                <div class="about__img-box about__img-box--1">
+                  <img class="about__img" src="./images/photo-4.jpg" width="300" height="290" alt="Our member">
+                </div>
+              </div>
+            </div>
+            <div class="about__content">
+              <h2 class="title about__title">
+                About Us
+              </h2>
+              <div class="about__info">
+                <p class="about__txt">
+                  The Bulldog Club of Kentucky is a non-profit organization whose members range from professional
+                  Bulldog
+                  breeders, people who compete at dog shows, owners of pet Bulldogs, and people who just love the breed.
+                </p>
+                <p class="about__txt">
+                  Our goal is to enhance the breed by promoting initiatives that focus on breeding dogs that are healthy
+                  and have sound physical attributes, aligning with the standards set for the breed's excellence.
+                </p>
+              </div>
+              <button class="btn-secondary" type="button" data-modal-button>
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="category section">
+        <div class="container">
+          <h2 class="sr-only">
+            Our services
+          </h2>
+          <ul class="category__list">
+            <li class="category__item">
+              <a class="category__link category__link--breed" href="blog-one.html">
+                <h3 class="category__title">
+                  Breed info
+                </h3>
+              </a>
+            </li>
+            <li class="category__item">
+              <a class="category__link category__link--show" href="show.html">
+                <h3 class="category__title">
+                  Show&Events
+                </h3>
+              </a>
+            </li>
+            <li class="category__item">
+              <a class="category__link category__link--gallery" href="gallery.html">
+                <h3 class="category__title">
+                  Our dogs
+                </h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="info section">
+        <div class="container">
+          <h2 class="title info__title">
+            Breed info
+          </h2>
+          <ul class="info__row">
+            <li class="info__item">
+              <article class="blog-card">
+                <a class="blog-card__link" href="blog-one.html">
+                  <img class="blog-card__img" src="./images/articles/blog-01.jpg" width="530" height="330" alt="#">
+                  <h3 class="blog-card__title">
+                    Rare and unusual colours
+                  </h3>
+                  <p class="blog-card__txt">
+                    Before buying a puppy it’s useful to know that every breed of pedigree dog has a list of ideal
+                    recognised colours described in their breed standard (a description and guide to what a breed looks
+                    and acts like).In doing your research to find a puppy, you may have come across adverts for dogs
+                    that
+                    have ‘unusual’ colouring. Before deciding to buy one of these ‘rare’ coloured dogs, there are some
+                    things you need to know first.
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="info__item">
+              <article class="blog-card">
+                <a class="blog-card__link" href="blog-one.html">
+                  <img class="blog-card__img" src="./images/articles/blog-06.jpg" width="530" height="330" alt="#">
+                  <h3 class="blog-card__title">
+                    French Bulldog Breed Information
+                  </h3>
+                  <p class="blog-card__txt">
+                    The French Bulldog is a companion dog. The breed is small and muscular with heavy bone structure, a
+                    smooth
+                    coat, a short face and trademark "bat" ears. Prized for its affectionate nature and balanced
+                    disposition,
+                    they are generally active and alert, but not unduly boisterous. Frenchies can be brindle, fawn,
+                    white,
+                    and
+                    brindle and white.
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="info__item info__item--hidden">
+              <article class="blog-card">
+                <a class="blog-card__link" href="blog-one.html">
+                  <img class="blog-card__img" src="./images/articles/blog-04.jpg" width="530" height="330" alt="#">
+                  <h3 class="blog-card__title">
+                    Fawn French Bulldog
+                  </h3>
+                  <p class="blog-card__txt">
+                    The Blue Fawn French Bulldog is a rare and unique breed of French Bulldog. This is a purebred dog
+                    named
+                    for their distinctive color. If you’re looking for more information on the Blue Fawn Frenchie,
+                    you’ve
+                    come to the right place. Here’s all the information that you need to know about this rare dog breed.
+                  </p>
+                </a>
+              </article>
+            </li>
+          </ul>
+
+          <ul class="info__row">
+            <li class="info__item">
+              <article class="blog-card">
+                <a class="blog-card__link" href="blog-one.html">
+                  <img class="blog-card__img" src="./images/articles/blog-03.jpg" width="530" height="330" alt="#">
+                  <h3 class="blog-card__title">
+                    English Bulldog Breed Guide: Characteristics, History & Care
+                  </h3>
+                  <p class="blog-card__txt">
+                    English Bulldog pictures quickly reveal a distinctive look. They have small, thin ears located at
+                    the
+                    back of the head, as well as deep folds of loose skin that start on the forehead and extend down to
+                    the
+                    jowl. Their anatomy is classified as brachycephalic, with eyes set wide above a short muzzle that
+                    features a broad, black nose, hanging upper lips, and a strongly undershot lower jaw.
+                  </p>
+                </a>
+              </article>
+
+            </li>
+            <li class="info__item">
+              <article class="blog-card">
+                <a class="blog-card__link" href="blog-one.html">
+                  <img class="blog-card__img" src="./images/articles/blog-02.jpg" width="530" height="330" alt="#">
+                  <h3 class="blog-card__title">
+                    American Bulldog: Breed Overview
+                  </h3>
+                  <p class="blog-card__txt">
+                    Bulldogs are some of the most popular dogs around the globe. One of their bigger varieties is the
+                    American Bulldog. The American Bulldog is a highly affectionate, gentle, and loving dog that many
+                    people
+                    can’t get enough of. These gentle giants are a favorite among families and those in need of a work
+                    dog.
+                  </p>
+                </a>
+              </article>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="adv section" style="background-image: url('./images/adv.jpg');">
+        <div class="container">
+          <div class="adv__inner" style="background-image: url('./images/adv-bg.png');">
+            <div class="adv__content">
+              <h2 class="title adv__title">
+                Join our Team
+              </h2>
+              <p class="adv__txt">
+                When you join our club, you'll get an exciting year full of canine adventures, helping you to learn new
+                skills, build confidence and make new friends through our programme of dog activities across the World.
               </p>
+              <ul class="adv__list">
+                <li class="adv__item">
+                  Showing
+                </li>
+                <li class="adv__item">
+                  Training
+                </li>
+                <li class="adv__item">
+                  Media center
+                </li>
+                <li class="adv__item">
+                  Help center
+                </li>
+              </ul>
+              <button class="button" type="button" data-modal-button>
+                Join us
+              </button>
+
             </div>
-            <button class="btn-secondary" type="button" data-modal-button>
-              Sign Up
-            </button>
           </div>
         </div>
-      </div>
+      </section>
 
-    </section>
+      <section class="news section">
+        <div class="container">
 
-    <section class="category section">
-      <div class="container">
-        <h2 class="sr-only">
-          Our services
-        </h2>
-        <ul class="category__list">
-          <li class="category__item">
-            <a class="category__link category__link--breed" href="blog-one.html">
-              <h3 class="category__title">
-                Breed info
-              </h3>
-            </a>
-          </li>
-          <li class="category__item">
-            <a class="category__link category__link--show" href="show.html">
-              <h3 class="category__title">
-                Show&Events
-              </h3>
-            </a>
-          </li>
-          <li class="category__item">
-            <a class="category__link category__link--gallery" href="gallery.html">
-              <h3 class="category__title">
-                Our dogs
-              </h3>
-            </a>
-          </li>
-        </ul>
-      </div>
+          <div class="swiper">
+            <div class="swiper__top">
+              <h2 class="title">
+                Useful resources
+              </h2>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
 
-    </section> 
+            <div class="swiper-wrapper">
 
-    <section class="info section">
-      <div class="container">
-        <h2 class="title info__title">
-          Breed info
-        </h2>
-        <ul class="info__row">
-          <li class="info__item">
-            <article class="blog-card">
-              <a class="blog-card__link" href="blog-one.html">
-                <img class="blog-card__img" src="./images/articles/blog-01.jpg" width="530" height="330" alt="#">
-                <h3 class="blog-card__title">
-                  Rare and unusual colours
-                </h3>
-                <p class="blog-card__txt">
-                  Before buying a puppy it’s useful to know that every breed of pedigree dog has a list of ideal
-                  recognised colours described in their breed standard (a description and guide to what a breed looks
-                  and acts like).In doing your research to find a puppy, you may have come across adverts for dogs that
-                  have ‘unusual’ colouring. Before deciding to buy one of these ‘rare’ coloured dogs, there are some
-                  things you need to know first.
-                </p>
-              </a>
-            </article>
-          </li>
-          <li class="info__item">
-            <article class="blog-card">
-              <a class="blog-card__link" href="blog-one.html">
-                <img class="blog-card__img" src="./images/articles/blog-06.jpg" width="530" height="330" alt="#">
-                <h3 class="blog-card__title">
-                  French Bulldog Breed Information
-                </h3>
-                <p class="blog-card__txt">
-                  The French Bulldog is a companion dog. The breed is small and muscular with heavy bone structure, a
-                  smooth
-                  coat, a short face and trademark "bat" ears. Prized for its affectionate nature and balanced
-                  disposition,
-                  they are generally active and alert, but not unduly boisterous. Frenchies can be brindle, fawn, white,
-                  and
-                  brindle and white.
-                </p>
-              </a>
-            </article>
-          </li>
-          <li class="info__item info__item--hidden">
-            <article class="blog-card">
-              <a class="blog-card__link" href="blog-one.html">
-                <img class="blog-card__img" src="./images/articles/blog-04.jpg" width="530" height="330" alt="#">
-                <h3 class="blog-card__title">
-                  Fawn French Bulldog
-                </h3>
-                <p class="blog-card__txt">
-                  The Blue Fawn French Bulldog is a rare and unique breed of French Bulldog. This is a purebred dog
-                  named
-                  for their distinctive color. If you’re looking for more information on the Blue Fawn Frenchie, you’ve
-                  come to the right place. Here’s all the information that you need to know about this rare dog breed.
-                </p>
-              </a>
-            </article>
-          </li>
-        </ul>
+              <div class="swiper-slide">
+                <article class="blog-card blog-card--small">
+                  <a class="blog-card__link" href="blog-one.html">
+                    <img class="blog-card__img" src="./images/articles/blog-8.jpg" width="530" height="330" alt="#">
+                    <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
+                    <h3 class="blog-card__title">
+                      Health and Care A to Z. Tips and advice
+                    </h3>
+                    <p class="blog-card__txt">
+                      TDiscover our comprehensive A to Z guide covering various common health issues that dogs may
+                      encounter throughout their lives. Within this resource, you will find a plethora of informative
+                      articles addressing a wide range of health and well-being topics relevant to your canine
+                      companion.
+                    </p>
+                  </a>
+                </article>
+              </div>
 
-        <ul class="info__row">
-          <li class="info__item">
-            <article class="blog-card">
-              <a class="blog-card__link" href="blog-one.html">
-                <img class="blog-card__img" src="./images/articles/blog-03.jpg" width="530" height="330" alt="#">
-                <h3 class="blog-card__title">
-                  English Bulldog Breed Guide: Characteristics, History & Care
-                </h3>
-                <p class="blog-card__txt">
-                  English Bulldog pictures quickly reveal a distinctive look. They have small, thin ears located at the
-                  back of the head, as well as deep folds of loose skin that start on the forehead and extend down to
-                  the
-                  jowl. Their anatomy is classified as brachycephalic, with eyes set wide above a short muzzle that
-                  features a broad, black nose, hanging upper lips, and a strongly undershot lower jaw.
-                </p>
-              </a>
-            </article>
+              <div class="swiper-slide">
+                <article class="blog-card blog-card--small">
+                  <a class="blog-card__link" href="blog-one.html">
+                    <img class="blog-card__img" src="./images/articles/blog-6.jpg" width="530" height="330" alt="#">
+                    <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
+                    <h3 class="blog-card__title">
+                      Health and welfare at dog shows
+                    </h3>
+                    <p class="blog-card__txt">
+                      Explore our efforts to enhance the methods of monitoring and preserving the health of show dogs.
+                      Delve into the initiatives and measures we are undertaking to improve the overall well-being and
+                      medical supervision of dogs participating in shows.
+                    </p>
+                  </a>
+                </article>
+              </div>
 
-          </li>
-          <li class="info__item">
-            <article class="blog-card">
-              <a class="blog-card__link" href="blog-one.html">
-                <img class="blog-card__img" src="./images/articles/blog-02.jpg" width="530" height="330" alt="#">
-                <h3 class="blog-card__title">
-                  American Bulldog: Breed Overview
-                </h3>
-                <p class="blog-card__txt">
-                  Bulldogs are some of the most popular dogs around the globe. One of their bigger varieties is the
-                  American Bulldog. The American Bulldog is a highly affectionate, gentle, and loving dog that many
-                  people
-                  can’t get enough of. These gentle giants are a favorite among families and those in need of a work
-                  dog.
-                </p>
-              </a>
-            </article>
-          </li>
+              <div class="swiper-slide">
+                <article class="blog-card blog-card--small">
+                  <a class="blog-card__link" href="blog-one.html">
+                    <img class="blog-card__img" src="./images/articles/blog-7.jpg" width="530" height="330" alt="#">
+                    <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
+                    <h3 class="blog-card__title">
+                      6 Tips for Keeping Your Dog Healthy
+                    </h3>
+                    <p class="blog-card__txt">
+                      In addition to showering your beloved pup with ample love and care, our veterinarians in Rainbow
+                      City have shared six valuable tips on how you can actively contribute to maintaining your dog's
+                      well-being. By following these guidelines, you can play a crucial role in promoting the health and
+                      vitality of your furry companion.
+                      eed to know about this rare dog breed.
+                    </p>
+                  </a>
+                </article>
+              </div>
 
-        </ul>
+              <div class="swiper-slide">
+                <article class="blog-card blog-card--small">
+                  <a class="blog-card__link" href="blog-one.html">
+                    <img class="blog-card__img" src="./images/articles/blog-10.jpg" width="530" height="330" alt="#">
+                    <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
+                    <h3 class="blog-card__title">
+                      What we do for dog health
+                    </h3>
+                    <p class="blog-card__txt">
+                      Our mission is to enhance the well-being of dogs, both in the present and in the long run. We
+                      achieve this by conducting research, fostering collaborations, providing valuable resources, and
+                      implementing health schemes. Through these efforts, we aim to make a positive impact on the lives
+                      of
+                      dogs, ensuring a brighter future for them.
+                    </p>
+                  </a>
+                </article>
+              </div>
 
-      </div>
-    </section>
+              <div class="swiper-slide">
+                <article class="blog-card blog-card--small">
+                  <a class="blog-card__link" href="blog-one.html">
+                    <img class="blog-card__img" src="./images/articles/blog-2.jpg" width="530" height="330" alt="#">
+                    <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
+                    <h3 class="blog-card__title">
+                      Change of ownership
+                    </h3>
+                    <p class="blog-card__txt">
+                      Discover additional information on the process of updating the registered ownership of your newly
+                      acquired dog with The Club. Expand your knowledge on the necessary steps and requirements involved
+                      in
+                      changing the ownership details for your beloved canine companion.
+                    </p>
+                  </a>
+                </article>
+              </div>
+            </div>
 
-    <section class="adv section" style="background-image: url('./images/adv.jpg');">
-      <div class="container">
-        <div class="adv__inner" style="background-image: url('./images/adv-bg.png');">
-          <div class="adv__content">
-            <h2 class="title adv__title">
-              Join our Team
-            </h2>
-            <p class="adv__txt">
-              When you join our club, you'll get an exciting year full of canine adventures, helping you to learn new
-              skills, build confidence and make new friends through our programme of dog activities across the World.
-            </p>
-            <ul class="adv__list">
-              <li class="adv__item">
-                Showing
-              </li>
-              <li class="adv__item">
-                Training
-              </li>
-              <li class="adv__item">
-                Media center
-              </li>
-              <li class="adv__item">
-                Help center
-              </li>
-            </ul>
-            <button class="button" type="button" data-modal-button>
-              Join us
-            </button>
-
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-      </div>
-    </section>
 
-   <section class="news section">
-      <div class="container">
-
-        <div class="swiper">
-          <div class="swiper__top">
-            <h2 class="title">
-              Useful resources
-            </h2>
-            <div class="swiper__buttons">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-          
-          <div class="swiper-wrapper">
-            
-            <div class="swiper-slide">
-              <article class="blog-card blog-card--small">
-                <a class="blog-card__link" href="blog-one.html">
-                  <img class="blog-card__img" src="./images/articles/blog-8.jpg" width="530" height="330" alt="#">
-                  <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
-                  <h3 class="blog-card__title">
-                    Health and Care A to Z. Tips and advice
-                  </h3>
-                  <p class="blog-card__txt">
-                    TDiscover our comprehensive A to Z guide covering various common health issues that dogs may
-                    encounter throughout their lives. Within this resource, you will find a plethora of informative
-                    articles addressing a wide range of health and well-being topics relevant to your canine companion.
-                  </p>
-                </a>
-              </article>
-            </div>
-
-            <div class="swiper-slide">
-              <article class="blog-card blog-card--small">
-                <a class="blog-card__link" href="blog-one.html">
-                  <img class="blog-card__img" src="./images/articles/blog-6.jpg" width="530" height="330" alt="#">
-                  <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
-                  <h3 class="blog-card__title">
-                    Health and welfare at dog shows
-                  </h3>
-                  <p class="blog-card__txt">
-                    Explore our efforts to enhance the methods of monitoring and preserving the health of show dogs.
-                    Delve into the initiatives and measures we are undertaking to improve the overall well-being and
-                    medical supervision of dogs participating in shows.
-                  </p>
-                </a>
-              </article>
-            </div>
-
-            <div class="swiper-slide">
-              <article class="blog-card blog-card--small">
-                <a class="blog-card__link" href="blog-one.html">
-                  <img class="blog-card__img" src="./images/articles/blog-7.jpg" width="530" height="330" alt="#">
-                  <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
-                  <h3 class="blog-card__title">
-                    6 Tips for Keeping Your Dog Healthy
-                  </h3>
-                  <p class="blog-card__txt">
-                    In addition to showering your beloved pup with ample love and care, our veterinarians in Rainbow
-                    City have shared six valuable tips on how you can actively contribute to maintaining your dog's
-                    well-being. By following these guidelines, you can play a crucial role in promoting the health and
-                    vitality of your furry companion.
-                    eed to know about this rare dog breed.
-                  </p>
-                </a>
-              </article>
-            </div>
-
-            <div class="swiper-slide">
-              <article class="blog-card blog-card--small">
-                <a class="blog-card__link" href="blog-one.html">
-                  <img class="blog-card__img" src="./images/articles/blog-10.jpg" width="530" height="330" alt="#">
-                  <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
-                  <h3 class="blog-card__title">
-                    What we do for dog health
-                  </h3>
-                  <p class="blog-card__txt">
-                    Our mission is to enhance the well-being of dogs, both in the present and in the long run. We
-                    achieve this by conducting research, fostering collaborations, providing valuable resources, and
-                    implementing health schemes. Through these efforts, we aim to make a positive impact on the lives of
-                    dogs, ensuring a brighter future for them.
-                  </p>
-                </a>
-              </article>
-            </div>
-
-            <div class="swiper-slide">
-              <article class="blog-card blog-card--small">
-                <a class="blog-card__link" href="blog-one.html">
-                  <img class="blog-card__img" src="./images/articles/blog-2.jpg" width="530" height="330" alt="#">
-                  <time class="blog-card__data" datetime="2022-07-06">26.07.2022</time>
-                  <h3 class="blog-card__title">
-                    Change of ownership
-                  </h3>
-                  <p class="blog-card__txt">
-                    Discover additional information on the process of updating the registered ownership of your newly
-                    acquired dog with The Club. Expand your knowledge on the necessary steps and requirements involved
-                    in
-                    changing the ownership details for your beloved canine companion.
-                  </p>
-                </a>
-              </article>
-            </div>
-          </div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-    </section>
+      </section>
 
 
-  </main>
+    </main>
 
-<footer class="footer">
+    <footer class="footer">
   <div class="container">
     <div class="footer__inner">
 
@@ -700,7 +709,7 @@
       <li class="footer__bottom-item">
         <a class="footer__bottom-link"
           href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=irynakozlova.k@gmail.com" target="_blank">
-          created by iryna kozlova
+          created by kozlova.ux
         </a>
       </li>
     </ul>
@@ -710,7 +719,7 @@
 
 </footer>
 
-
+  </div>
   <script src=" js/main.min.js"> </script>
 </body>
 
