@@ -133,3 +133,5 @@
       var mixer = mixitup('.gallery__list');
     }
   });
+
+
